@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurora — supervisão local</title>
+<link rel="icon" href="data:,">
+<style>
+body{font:17px/1.5 system-ui,sans-serif;background:#f4f6f8;color:#182937;margin:0}
+main{max-width:900px;margin:40px auto;padding:28px;background:white;border-radius:12px}
+h1{margin-top:0}h2{font-size:21px;margin-top:30px}label{display:block;margin-top:12px}
+input,select,button{font:inherit;padding:9px;border:1px solid #99a9b5;border-radius:5px}
+input{width:95%}button{background:#163f59;color:white;cursor:pointer;margin:8px 6px 8px 0}
+button.secondary{background:white;color:#163f59}pre{white-space:pre-wrap;overflow-wrap:anywhere;
+padding:15px;background:#edf2f5;border-radius:6px;font:14px/1.6 monospace}
+.note{color:#526473}.actions{display:flex;flex-wrap:wrap}#status{font-weight:600}
+</style>
+<main><h1>Aurora: acompanhar e revisar</h1>
+<p class="note">Bancada local do livro. A credencial fica apenas nesta página.
+Desconectar os eventos não cancela a execução.</p>
+<label>Credencial de sessão<input id="token" type="password" autocomplete="off"></label>
+<label>Tipo de pedido<select id="tipo"><option value="revisao">Revisão de proposta</option>
+<option value="conhecimento">Consulta de conhecimento</option><option value="operacao">Operação</option></select></label>
+<label>Pedido<input id="texto" value="Conferir proposta"></label>
+<label>Chave desta intenção<input id="chave"></label>
+<div class="actions"><button id="criar">Enviar ou repetir o pedido</button>
+<button class="secondary" id="nova">Preparar nova intenção</button></div>
+<label>Identificador da execução<input id="execucao"></label>
+<div class="actions"><button id="consultar">Consultar estado</button>
+<button class="secondary" id="conectar">Receber eventos</button>
+<button class="secondary" id="desconectar">Desconectar eventos</button></div>
+<p id="status" role="status">Nenhuma execução consultada.</p>
+<h2>Estado e proposta</h2><pre id="estado">O estado aparecerá aqui.</pre>
+<p class="note">Para revisar, use uma sessão de revisor e confira a proposta acima.
+A decisão se refere ao digest da última consulta.</p>
+<div class="actions"><button id="aprovar">Aprovar proposta consultada</button>
+<button class="secondary" id="rejeitar">Rejeitar</button>
+<button class="secondary" id="cancelar">Cancelar trabalho pendente</button>
+<button class="secondary" id="conciliar">Consultar confirmação no destino</button></div>
+<h2>Eventos recebidos</h2><pre id="eventos">Sem eventos.</pre></main>
+<script>
+const el=id=>document.getElementById(id);
+let atual=null,cursor=0,controlador=null,execucaoEventos='';
+el('chave').value=crypto.randomUUID();
+async function api(path,method='GET',body){
+  const headers={Authorization:'Bearer '+el('token').value,'Content-Type':'application/json',
+    'Idempotency-Key':el('chave').value};
+  const r=await fetch(path,{method,headers,body:body===undefined?undefined:JSON.stringify(body)});
+  const data=await r.json();if(!r.ok)throw Error(data.codigo||'Falha na requisição');return data;
+}
+async function consultar(){
+  atual=await api('/execucoes/'+encodeURIComponent(el('execucao').value));
+  el('estado').textContent=JSON.stringify(atual,null,2);
+  el('status').textContent='Situação: '+atual.status;return atual;
+}
+function acao(id,fn){el(id).onclick=async()=>{try{await fn()}catch(e){el('status').textContent=e.message}}}
+acao('nova',()=>{el('chave').value=crypto.randomUUID();el('status').textContent='Nova chave preparada. O próximo envio criará outra intenção.'});
+acao('criar',async()=>{const r=await api('/execucoes','POST',{tipo:el('tipo').value,texto:el('texto').value});
+ el('execucao').value=r.id;await consultar()});
+acao('consultar',consultar);
+async function decidir(aceitar){
+ if(!atual||atual.status!=='revisao'||atual.id!==el('execucao').value)throw Error('Consulte uma revisão pendente primeiro.');
+ await api('/execucoes/'+atual.id+'/decisao','POST',{aceitar,digest:atual.digest});await consultar();
+}
+acao('aprovar',()=>decidir(true));acao('rejeitar',()=>decidir(false));
+acao('cancelar',async()=>{await api('/execucoes/'+el('execucao').value+'/cancelar','POST',{});await consultar()});
+acao('conciliar',async()=>{await api('/execucoes/'+el('execucao').value+'/conciliar','POST',{});await consultar()});
+acao('desconectar',()=>{controlador?.abort();el('status').textContent='Eventos desconectados; consulte o estado para acompanhar o trabalho.'});
+acao('conectar',async()=>{
+ controlador?.abort();controlador=new AbortController();const controle=controlador;
+ const id=el('execucao').value;if(execucaoEventos!==id){cursor=0;execucaoEventos=id;el('eventos').textContent=''}
+ const r=await fetch('/execucoes/'+encodeURIComponent(id)+'/eventos?apos='+cursor,
+ {headers:{Authorization:'Bearer '+el('token').value},signal:controle.signal});
+ if(!r.ok)throw Error('Não foi possível abrir os eventos.');
+ const leitor=r.body.getReader(),dec=new TextDecoder();let buffer='';
+ try{while(true){const {done,value}=await leitor.read();if(done)break;buffer+=dec.decode(value,{stream:true});
+ let pos;while((pos=buffer.indexOf('\n\n'))>=0){const bloco=buffer.slice(0,pos);buffer=buffer.slice(pos+2);
+ const idEvento=Number(bloco.match(/^id: (\d+)/m)?.[1]||0);
+ if(idEvento>cursor){el('eventos').textContent+=bloco+'\n\n';cursor=idEvento;}}}
+ await consultar();}catch(e){if(e.name!=='AbortError')throw e;}
+});
+</script></html>

@@ -1,0 +1,97 @@
+{
+  "capitulo": 21,
+  "casos": [
+    {
+      "nome": "admissao_http",
+      "observado": 202,
+      "esperado": 202,
+      "confere": true
+    },
+    {
+      "nome": "repeticao_mesma_intencao",
+      "observado": [
+        200,
+        true
+      ],
+      "esperado": [
+        200,
+        true
+      ],
+      "confere": true
+    },
+    {
+      "nome": "chave_com_outro_conteudo",
+      "observado": 409,
+      "esperado": 409,
+      "confere": true
+    },
+    {
+      "nome": "acesso_cruzado",
+      "observado": 404,
+      "esperado": 404,
+      "confere": true
+    },
+    {
+      "nome": "nome_nao_e_credencial",
+      "observado": 401,
+      "esperado": 401,
+      "confere": true
+    },
+    {
+      "nome": "primeiro_evento_recebido",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "desconexao_nao_cancela",
+      "observado": "revisao",
+      "esperado": "revisao",
+      "confere": true
+    },
+    {
+      "nome": "digest_divergente",
+      "observado": 409,
+      "esperado": 409,
+      "confere": true
+    },
+    {
+      "nome": "leitor_nao_aprova",
+      "observado": 403,
+      "esperado": 403,
+      "confere": true
+    },
+    {
+      "nome": "revisao_concluida",
+      "observado": [
+        "concluida",
+        0
+      ],
+      "esperado": [
+        "concluida",
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "cancelamento_pendente",
+      "observado": "cancelada",
+      "esperado": "cancelada",
+      "confere": true
+    },
+    {
+      "nome": "reconexao_projetada",
+      "observado": [
+        true,
+        true
+      ],
+      "esperado": [
+        true,
+        true
+      ],
+      "confere": true
+    }
+  ],
+  "politica_desconexao": "worker_independente",
+  "http_real": true
+}

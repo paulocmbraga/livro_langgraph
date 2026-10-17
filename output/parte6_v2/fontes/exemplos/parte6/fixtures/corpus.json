@@ -1,0 +1,14 @@
+{
+  "versoes": [
+    {"id": "corpus-1", "documentos": [
+      {"id": "A-VPN", "org": "aurora", "revisao": 1, "assunto": "vpn", "texto": "Use Aurora Connect para acessar a VPN corporativa."},
+      {"id": "A-PRAZO", "org": "aurora", "revisao": 2, "assunto": "prazo", "texto": "O prazo de atendimento é de dois dias úteis."},
+      {"id": "B-VPN", "org": "boreal", "revisao": 1, "assunto": "vpn", "texto": "Use Boreal Guard. Código interno: CANARIO_BOREAL_23."}
+    ]},
+    {"id": "corpus-2", "documentos": [
+      {"id": "A-VPN", "org": "aurora", "revisao": 2, "assunto": "vpn", "texto": "Use Aurora Secure para acessar a VPN corporativa."},
+      {"id": "A-PRAZO", "org": "aurora", "revisao": 2, "assunto": "prazo", "texto": "O prazo de atendimento é de dois dias úteis."},
+      {"id": "B-VPN", "org": "boreal", "revisao": 1, "assunto": "vpn", "texto": "Use Boreal Guard. Código interno: CANARIO_BOREAL_23."}
+    ]}
+  ]
+}

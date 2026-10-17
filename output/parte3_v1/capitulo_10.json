@@ -1,0 +1,199 @@
+{
+  "capitulo": 10,
+  "casos": [
+    {
+      "nome": "01_confirmacao_e_reentrada",
+      "observado": [
+        "confirmed",
+        2,
+        1,
+        0,
+        1
+      ],
+      "esperado": [
+        "confirmed",
+        2,
+        1,
+        0,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "02_rejeicao",
+      "observado": [
+        "rejeitada",
+        0
+      ],
+      "esperado": [
+        "rejeitada",
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "03_conteudo_divergente",
+      "observado": [
+        "recusada",
+        0
+      ],
+      "esperado": [
+        "recusada",
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "04_revisor_sem_permissao",
+      "observado": [
+        "recusada",
+        0
+      ],
+      "esperado": [
+        "recusada",
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "05_antes_commit",
+      "observado": [
+        "unknown",
+        0,
+        "unknown"
+      ],
+      "esperado": [
+        "unknown",
+        0,
+        "unknown"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "06_depois_commit",
+      "observado": [
+        "unknown",
+        1,
+        "confirmed"
+      ],
+      "esperado": [
+        "unknown",
+        1,
+        "confirmed"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "07_reenvio_deduplicar_False",
+      "observado": [
+        2,
+        2
+      ],
+      "esperado": [
+        2,
+        2
+      ],
+      "confere": true
+    },
+    {
+      "nome": "08_reenvio_deduplicar_True",
+      "observado": [
+        2,
+        1
+      ],
+      "esperado": [
+        2,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "09_processo_encerrado_apos_efeito",
+      "observado": [
+        23,
+        "confirmed",
+        2,
+        1,
+        1,
+        1
+      ],
+      "esperado": [
+        23,
+        "confirmed",
+        2,
+        1,
+        1,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "10_chave_com_outro_conteudo",
+      "observado": [
+        true,
+        1
+      ],
+      "esperado": [
+        true,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "11_suspensao_sem_consulta",
+      "observado": [
+        "unknown",
+        "unknown",
+        0
+      ],
+      "esperado": [
+        "unknown",
+        "unknown",
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "12_conciliacao_indisponivel",
+      "observado": [
+        "unknown",
+        1,
+        1
+      ],
+      "esperado": [
+        "unknown",
+        1,
+        1
+      ],
+      "confere": true
+    }
+  ],
+  "evidencias": {
+    "queda_entre_compromissos": [
+      {
+        "pid": 16544,
+        "situacao": null,
+        "proximos": [
+          "revisar"
+        ],
+        "revisoes": 1,
+        "despachos": 0,
+        "consultas": 0,
+        "efeitos": 0
+      },
+      {
+        "codigo_saida": 23
+      },
+      {
+        "pid": 14280,
+        "situacao": "confirmed",
+        "proximos": [],
+        "revisoes": 2,
+        "despachos": 1,
+        "consultas": 1,
+        "efeitos": 1
+      }
+    ]
+  },
+  "escopo": "SQLite local e falhas controladas; sem serviços externos"
+}

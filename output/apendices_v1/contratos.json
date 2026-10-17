@@ -1,0 +1,12 @@
+{
+  "pedidos": 5,
+  "concluidas": 2,
+  "falhas": 1,
+  "desconhecidas": 1,
+  "recusadas": 1,
+  "taxa_conclusao": 0.4,
+  "conclusoes_por_s": 1.0,
+  "p95_concluidas_ms": 300.0,
+  "custo_total_usd": 0.1,
+  "custo_por_conclusao_usd": 0.05
+}

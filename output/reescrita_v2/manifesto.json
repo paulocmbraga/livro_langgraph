@@ -1,0 +1,97 @@
+{
+  "edicao": "reescrita-1",
+  "completo": true,
+  "instante_utc": "2026-10-16T17:13:35.850808+00:00",
+  "ambiente": {
+    "python": "3.12.0",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "pacotes": {
+      "aiosqlite": "0.22.1",
+      "annotated-types": "0.8.0",
+      "anyio": "4.15.1",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.5.2",
+      "distro": "1.9.0",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httpcore2": "2.13.1",
+      "httpx": "0.28.1",
+      "httpx2": "2.13.1",
+      "idna": "3.20",
+      "jsonpatch": "1.35",
+      "jsonpointer": "3.2.1",
+      "langchain-core": "1.6.11",
+      "langchain-protocol": "0.0.19",
+      "langgraph": "1.2.15",
+      "langgraph-checkpoint": "4.3.0",
+      "langgraph-checkpoint-sqlite": "3.1.2",
+      "langgraph-prebuilt": "1.1.1",
+      "langgraph-sdk": "0.4.7",
+      "langsmith": "0.14.11",
+      "orjson": "3.13.0",
+      "ormsgpack": "1.13.0",
+      "packaging": "26.3",
+      "pydantic": "2.14.1",
+      "pydantic_core": "2.50.1",
+      "PyYAML": "6.0.3",
+      "requests": "2.34.2",
+      "requests-toolbelt": "1.0.0",
+      "sniffio": "1.3.1",
+      "sqlite-vec": "0.1.9",
+      "tenacity": "9.2.1",
+      "truststore": "0.10.5",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0",
+      "urllib3": "2.8.0",
+      "uuid_utils": "0.17.1",
+      "websockets": "16.1.1",
+      "xxhash": "4.0.1",
+      "zstandard": "0.25.0"
+    }
+  },
+  "fontes": {
+    "exemplos/__init__.py": "f451cce770ff545975929e25afc5f1639eb4ef917acbea340c4a2ac9ffeb5235",
+    "exemplos/cap01.py": "635e54cff32ea31ee059b06315ec40e950df7e53d2c239bebf80debf9c2b540e",
+    "exemplos/cap02.py": "6a737562cd93117e32547e4d01ba0b2680ce101d47519534812ae87b5b50aece",
+    "exemplos/cap02_validacao.py": "31df13b82972616262f131254f3e937e7cfffab2bff27d4601e405e978239e00",
+    "exemplos/cap03.py": "716d6ff4f783c0eb63c6efd22f85f9528decfc059b2220054d14933d1c6bb650",
+    "exemplos/cap04.py": "f0405cabe009ab184d2c901df9a552e51f3c261470922a940f973c276d860d32",
+    "exemplos/cap04_distribuicao.py": "15b037b366d52e5b5d399c315e3d52c9993d7a8fb3180683ca75294ba3830d99",
+    "exemplos/cap04_experimentos.py": "0d379cd2d86c8613a00d7d0c340fe5099599b64a005e1c319cb1378fc41d7ee5",
+    "exemplos/laboratorios.py": "738f6f3739b808954fd06bde0b7766191bef2970ac35cea54dc1426dcd89020e",
+    "exemplos/solucoes.py": "798032bb7f5f0bc67b6d413a5e25e8979b609a11521a9262788de58ff56cdb9c",
+    "requirements.lock.txt": "d450144e4b534bd1fc7793906d90ebce0deeb113f460f81dac183b9e77b37124",
+    "requirements.txt": "22c59cbd7055af9a780353a7d1c735e82925abc1c830f7df1deb5f1cd875ac07",
+    "scripts/capturar.py": "704ff67cb309cb37d84cdf640e9479ae88190502f49096051cb2fcbcc180acdd",
+    "scripts/conferir_livro.py": "beed5f07b9acc356bfee1e166351e81065b5a2004018922375358b99f306ae71",
+    "testes/test_parte1.py": "b99a2245f41bd08d3191959b79d4098173e6a48fbdd9fc2fb5870d2f968de2c1",
+    "testes/test_reproducao.py": "6b3ec789f49842266fbad9787dc57c58ad90f7daa431203b951536a9e914552a",
+    "testes/test_validacao_comparada.py": "5f5cbc8f6193dd203c252c43055e880e4783f26ed39d65cc0f006220829fd575"
+  },
+  "resultados": [
+    {
+      "capitulo": 1,
+      "arquivo": "capitulo_01.json",
+      "sha256": "a8f4232ce450d3dc937036bf749fe23f12ef870cbcb782bafe458fb5d2985c5c",
+      "casos": 9
+    },
+    {
+      "capitulo": 2,
+      "arquivo": "capitulo_02.json",
+      "sha256": "19c13f026dc3ef77e1c32cb243e6ea5eb49cf6e4ad75824ab5b399bd816caef7",
+      "casos": 13
+    },
+    {
+      "capitulo": 3,
+      "arquivo": "capitulo_03.json",
+      "sha256": "fb1fdaf42af75442038adc3c84e6019018dc4e458db2d44711d605dae8d570c8",
+      "casos": 9
+    },
+    {
+      "capitulo": 4,
+      "arquivo": "capitulo_04.json",
+      "sha256": "c6f4820c90e845a5680e0d30466f72d558ed6ea0e2c81e5b5d377ac89e509a49",
+      "casos": 9
+    }
+  ]
+}

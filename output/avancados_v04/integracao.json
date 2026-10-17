@@ -1,0 +1,30 @@
+{
+  "conhecimento": {
+    "publicacao": "Use Aurora Connect para acessar a VPN corporativa.",
+    "decisao": "permitir",
+    "eventos": [
+      {
+        "etapa": "entrada",
+        "acao": "mascarar",
+        "regra": "minimizacao_entrada",
+        "versao": "guardrails-1"
+      },
+      {
+        "etapa": "contexto",
+        "acao": "permitir",
+        "regra": "risco_baixo",
+        "versao": "guardrails-1"
+      },
+      {
+        "etapa": "saida",
+        "acao": "permitir",
+        "regra": "publicacao",
+        "versao": "guardrails-1"
+      }
+    ]
+  },
+  "antes_da_revisao": 0,
+  "depois_da_revisao": 1,
+  "situacao": "concluida",
+  "modelo_real": false
+}

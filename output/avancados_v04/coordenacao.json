@@ -1,0 +1,38 @@
+{
+  "pausou": true,
+  "resultado": "proposta_revisada_alta",
+  "atrasada": "obsoleta_ou_alheia",
+  "dossie_atual": {
+    "run": "R1",
+    "snapshot": 1,
+    "tentativas": {
+      "impacto": 2,
+      "operacao": 1
+    },
+    "entregas": {
+      "impacto": {
+        "run": "R1",
+        "tarefa": "impacto",
+        "mensagem": "M2",
+        "tentativa": 2,
+        "snapshot": 1,
+        "fonte": "D1",
+        "revisao": 1,
+        "prioridade": "alta"
+      },
+      "operacao": {
+        "run": "R1",
+        "tarefa": "operacao",
+        "mensagem": "M-operacao",
+        "tentativa": 1,
+        "snapshot": 1,
+        "fonte": "D2",
+        "revisao": 1,
+        "prioridade": "alta"
+      }
+    },
+    "status": "proposta",
+    "digest": "4cf987d670a40187db8ed187592149ccbc819a8f76f74c2a05ebf4b2aa0eeec9"
+  },
+  "autenticacao_revisor": "responsabilidade_do_servico_cap24"
+}

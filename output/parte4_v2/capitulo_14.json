@@ -1,0 +1,103 @@
+{
+  "capitulo": 14,
+  "casos": [
+    {
+      "nome": "duas_threads",
+      "observado": [
+        "pt-BR",
+        "pt-BR"
+      ],
+      "esperado": [
+        "pt-BR",
+        "pt-BR"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "correcao_versionada",
+      "observado": [
+        2,
+        "en"
+      ],
+      "esperado": [
+        2,
+        "en"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "escrita_antiga_recusada",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "outro_usuario",
+      "observado": null,
+      "esperado": null,
+      "confere": true
+    },
+    {
+      "nome": "outra_organizacao",
+      "observado": null,
+      "esperado": null,
+      "confere": true
+    },
+    {
+      "nome": "vencida_invisivel",
+      "observado": null,
+      "esperado": null,
+      "confere": true
+    },
+    {
+      "nome": "vencida_ainda_armazenada",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "expurgo_remove_conteudo",
+      "observado": [
+        1,
+        null
+      ],
+      "esperado": [
+        1,
+        null
+      ],
+      "confere": true
+    },
+    {
+      "nome": "versao_zero_nao_ressuscita",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "checkpoint_ainda_tem_copia",
+      "observado": "pt-BR",
+      "esperado": "pt-BR",
+      "confere": true
+    },
+    {
+      "nome": "outra_instancia_nao_persiste",
+      "observado": null,
+      "esperado": null,
+      "confere": true
+    },
+    {
+      "nome": "store_direto_nao_autentica",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    }
+  ],
+  "evidencias": {
+    "tombstone": {
+      "versao": 3,
+      "apagada": true,
+      "dados": null
+    },
+    "persistencia_entre_processos": false
+  }
+}

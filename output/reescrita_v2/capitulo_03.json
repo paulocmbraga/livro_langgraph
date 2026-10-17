@@ -1,0 +1,129 @@
+{
+  "capitulo": 3,
+  "casos": [
+    {
+      "caso": "falha_False",
+      "observado": {
+        "situacao": "concluido",
+        "trilha": [
+          "decidir",
+          "diagnosticar",
+          "finalizar"
+        ]
+      },
+      "esperado": {
+        "situacao": "concluido",
+        "trilha": [
+          "decidir",
+          "diagnosticar",
+          "finalizar"
+        ]
+      },
+      "confere": true
+    },
+    {
+      "caso": "orientacao_False",
+      "observado": {
+        "situacao": "concluido",
+        "trilha": [
+          "decidir",
+          "orientar",
+          "finalizar"
+        ]
+      },
+      "esperado": {
+        "situacao": "concluido",
+        "trilha": [
+          "decidir",
+          "orientar",
+          "finalizar"
+        ]
+      },
+      "confere": true
+    },
+    {
+      "caso": "mudanca_False",
+      "observado": {
+        "situacao": "recusado",
+        "trilha": [
+          "decidir",
+          "recusar"
+        ]
+      },
+      "esperado": {
+        "situacao": "recusado",
+        "trilha": [
+          "decidir",
+          "recusar"
+        ]
+      },
+      "confere": true
+    },
+    {
+      "caso": "mudanca_True",
+      "observado": {
+        "situacao": "proposto",
+        "trilha": [
+          "decidir",
+          "propor"
+        ]
+      },
+      "esperado": {
+        "situacao": "proposto",
+        "trilha": [
+          "decidir",
+          "propor"
+        ]
+      },
+      "confere": true
+    },
+    {
+      "caso": "command_equivalente",
+      "observado": {
+        "id": "A-17",
+        "situacao": "concluido",
+        "resposta": "Consulte o procedimento de acesso da equipe."
+      },
+      "esperado": {
+        "id": "A-17",
+        "situacao": "concluido",
+        "resposta": "Consulte o procedimento de acesso da equipe."
+      },
+      "confere": true
+    },
+    {
+      "caso": "command_com_aresta_extra",
+      "observado": [
+        "decidir",
+        "finalizar",
+        "lateral",
+        "orientar"
+      ],
+      "esperado": [
+        "decidir",
+        "finalizar",
+        "lateral",
+        "orientar"
+      ],
+      "confere": true
+    },
+    {
+      "caso": "fim_prematuro",
+      "observado": "final:resposta",
+      "esperado": "final:resposta",
+      "confere": true
+    },
+    {
+      "caso": "concluido_sem_resposta",
+      "observado": "final:resposta",
+      "esperado": "final:resposta",
+      "confere": true
+    },
+    {
+      "caso": "rota_inexistente",
+      "observado": "KeyError",
+      "esperado": "KeyError",
+      "confere": true
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "capitulo": 5,
+  "casos": [
+    {
+      "nome": "correta",
+      "observado": [
+        "proposta_valida",
+        true
+      ],
+      "esperado": [
+        "proposta_valida",
+        true
+      ],
+      "confere": true
+    },
+    {
+      "nome": "plausivel_errada",
+      "observado": [
+        "proposta_valida",
+        false
+      ],
+      "esperado": [
+        "proposta_valida",
+        false
+      ],
+      "confere": true
+    },
+    {
+      "nome": "numero_texto",
+      "observado": [
+        "estrutura_invalida",
+        false
+      ],
+      "esperado": [
+        "estrutura_invalida",
+        false
+      ],
+      "confere": true
+    },
+    {
+      "nome": "booleano",
+      "observado": [
+        "estrutura_invalida",
+        false
+      ],
+      "esperado": [
+        "estrutura_invalida",
+        false
+      ],
+      "confere": true
+    },
+    {
+      "nome": "dominio",
+      "observado": [
+        "estrutura_invalida",
+        false
+      ],
+      "esperado": [
+        "estrutura_invalida",
+        false
+      ],
+      "confere": true
+    },
+    {
+      "nome": "campo_extra",
+      "observado": [
+        "estrutura_invalida",
+        false
+      ],
+      "esperado": [
+        "estrutura_invalida",
+        false
+      ],
+      "confere": true
+    },
+    {
+      "nome": "justificativa_branca",
+      "observado": [
+        "justificativa_vazia",
+        false
+      ],
+      "esperado": [
+        "justificativa_vazia",
+        false
+      ],
+      "confere": true
+    },
+    {
+      "nome": "json_quebrado",
+      "observado": [
+        "estrutura_invalida",
+        false
+      ],
+      "esperado": [
+        "estrutura_invalida",
+        false
+      ],
+      "confere": true
+    },
+    {
+      "nome": "recusa_textual",
+      "observado": [
+        "estrutura_invalida",
+        false
+      ],
+      "esperado": [
+        "estrutura_invalida",
+        false
+      ],
+      "confere": true
+    },
+    {
+      "nome": "truncada",
+      "observado": "truncada",
+      "esperado": "truncada",
+      "confere": true
+    },
+    {
+      "nome": "mensagem_substituida",
+      "observado": [
+        1,
+        "Versão 2"
+      ],
+      "esperado": [
+        1,
+        "Versão 2"
+      ],
+      "confere": true
+    }
+  ],
+  "metricas_nove_respostas": {
+    "n": 9,
+    "validade": 0.2222222222222222,
+    "correcao_total": 0.1111111111111111,
+    "correcao_entre_validas": 0.5
+  },
+  "inferencia_real": {
+    "executada": false,
+    "motivo": "matriz_roteirizada"
+  }
+}

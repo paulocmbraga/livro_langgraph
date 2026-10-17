@@ -1,0 +1,209 @@
+{
+  "normal": {
+    "observacao": {
+      "estado": "testado",
+      "revisao": 4
+    },
+    "plano": {
+      "motivo": "plano",
+      "acoes": [
+        "testar"
+      ],
+      "expansoes": 1
+    },
+    "bloqueadas": [],
+    "tentativas": 3,
+    "planos": 3,
+    "motivo": "concluida",
+    "historico": [
+      {
+        "plano": {
+          "motivo": "plano",
+          "acoes": [
+            "diagnosticar",
+            "corrigir",
+            "testar"
+          ],
+          "expansoes": 4
+        },
+        "base": {
+          "estado": "novo",
+          "revisao": 1
+        }
+      },
+      {
+        "acao": "diagnosticar",
+        "situacao": "confirmada"
+      },
+      {
+        "plano": {
+          "motivo": "plano",
+          "acoes": [
+            "corrigir",
+            "testar"
+          ],
+          "expansoes": 3
+        },
+        "base": {
+          "estado": "diagnosticado",
+          "revisao": 2
+        }
+      },
+      {
+        "acao": "corrigir",
+        "situacao": "confirmada"
+      },
+      {
+        "plano": {
+          "motivo": "plano",
+          "acoes": [
+            "testar"
+          ],
+          "expansoes": 1
+        },
+        "base": {
+          "estado": "corrigido",
+          "revisao": 3
+        }
+      },
+      {
+        "acao": "testar",
+        "situacao": "confirmada"
+      }
+    ]
+  },
+  "replanejamento": {
+    "observacao": {
+      "estado": "testado",
+      "revisao": 4
+    },
+    "plano": {
+      "motivo": "plano",
+      "acoes": [
+        "testar"
+      ],
+      "expansoes": 1
+    },
+    "bloqueadas": [
+      "corrigir"
+    ],
+    "tentativas": 4,
+    "planos": 4,
+    "motivo": "concluida",
+    "historico": [
+      {
+        "plano": {
+          "motivo": "plano",
+          "acoes": [
+            "diagnosticar",
+            "corrigir",
+            "testar"
+          ],
+          "expansoes": 4
+        },
+        "base": {
+          "estado": "novo",
+          "revisao": 1
+        }
+      },
+      {
+        "acao": "diagnosticar",
+        "situacao": "confirmada"
+      },
+      {
+        "plano": {
+          "motivo": "plano",
+          "acoes": [
+            "corrigir",
+            "testar"
+          ],
+          "expansoes": 3
+        },
+        "base": {
+          "estado": "diagnosticado",
+          "revisao": 2
+        }
+      },
+      {
+        "acao": "corrigir",
+        "situacao": "indisponivel"
+      },
+      {
+        "plano": {
+          "motivo": "plano",
+          "acoes": [
+            "contornar",
+            "testar"
+          ],
+          "expansoes": 2
+        },
+        "base": {
+          "estado": "diagnosticado",
+          "revisao": 2
+        }
+      },
+      {
+        "acao": "contornar",
+        "situacao": "confirmada"
+      },
+      {
+        "plano": {
+          "motivo": "plano",
+          "acoes": [
+            "testar"
+          ],
+          "expansoes": 1
+        },
+        "base": {
+          "estado": "contornado",
+          "revisao": 3
+        }
+      },
+      {
+        "acao": "testar",
+        "situacao": "confirmada"
+      }
+    ]
+  },
+  "retorno_perdido": {
+    "observacao": {
+      "estado": "novo",
+      "revisao": 1
+    },
+    "plano": {
+      "motivo": "plano",
+      "acoes": [
+        "diagnosticar",
+        "corrigir",
+        "testar"
+      ],
+      "expansoes": 4
+    },
+    "bloqueadas": [],
+    "tentativas": 1,
+    "planos": 1,
+    "motivo": "desconhecida",
+    "historico": [
+      {
+        "plano": {
+          "motivo": "plano",
+          "acoes": [
+            "diagnosticar",
+            "corrigir",
+            "testar"
+          ],
+          "expansoes": 4
+        },
+        "base": {
+          "estado": "novo",
+          "revisao": 1
+        }
+      },
+      {
+        "acao": "diagnosticar",
+        "situacao": "desconhecida"
+      }
+    ]
+  },
+  "modelo_real": false
+}

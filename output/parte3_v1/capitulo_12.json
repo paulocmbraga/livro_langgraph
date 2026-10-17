@@ -1,0 +1,151 @@
+{
+  "capitulo": 12,
+  "casos": [
+    {
+      "nome": "fixture_aprovada_pendente",
+      "observado": [
+        [
+          "executar"
+        ],
+        true,
+        0
+      ],
+      "esperado": [
+        [
+          "executar"
+        ],
+        true,
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "v2_recusa_v1",
+      "observado": [
+        true,
+        0
+      ],
+      "esperado": [
+        true,
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "manter_runtime_v1",
+      "observado": [
+        "confirmed",
+        1
+      ],
+      "esperado": [
+        "confirmed",
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "migracao_invalida_aprovacao",
+      "observado": [
+        2,
+        null,
+        3
+      ],
+      "esperado": [
+        2,
+        null,
+        3
+      ],
+      "confere": true
+    },
+    {
+      "nome": "trilha_migracao",
+      "observado": [
+        "antiga",
+        true,
+        true
+      ],
+      "esperado": [
+        "antiga",
+        true,
+        true
+      ],
+      "confere": true
+    },
+    {
+      "nome": "entrada_migrada_duravel",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "origem_inativa",
+      "observado": [
+        true,
+        0
+      ],
+      "esperado": [
+        true,
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "nova_revisao_obrigatoria",
+      "observado": [
+        true,
+        0
+      ],
+      "esperado": [
+        true,
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "v2_confirmada",
+      "observado": [
+        "confirmed",
+        4,
+        1
+      ],
+      "esperado": [
+        "confirmed",
+        4,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "revisao_mudou_apos_aprovacao",
+      "observado": [
+        true,
+        1
+      ],
+      "esperado": [
+        true,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "efeito_preexistente_impede_migracao",
+      "observado": [
+        true,
+        1
+      ],
+      "esperado": [
+        true,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "nao_reusar_identidade",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    }
+  ],
+  "evidencias": {},
+  "escopo": "SQLite local e falhas controladas; sem serviços externos"
+}

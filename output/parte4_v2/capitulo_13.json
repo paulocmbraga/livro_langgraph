@@ -1,0 +1,143 @@
+{
+  "capitulo": 13,
+  "casos": [
+    {
+      "nome": "completo_excede",
+      "observado": "contexto_excedido",
+      "esperado": "contexto_excedido",
+      "confere": true
+    },
+    {
+      "nome": "completo_cabe_em_outro_limite",
+      "observado": 5,
+      "esperado": 5,
+      "confere": true
+    },
+    {
+      "nome": "janela_perde_decisao",
+      "observado": null,
+      "esperado": null,
+      "confere": true
+    },
+    {
+      "nome": "resumo_preserva_decisao",
+      "observado": 5,
+      "esperado": 5,
+      "confere": true
+    },
+    {
+      "nome": "resumo_inventa_com_hash_valido",
+      "observado": 9,
+      "esperado": 9,
+      "confere": true
+    },
+    {
+      "nome": "hash_antigo_recusado",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "correcao_recente_na_janela",
+      "observado": 2,
+      "esperado": 2,
+      "confere": true
+    },
+    {
+      "nome": "resumo_omite_correcao",
+      "observado": 5,
+      "esperado": 5,
+      "confere": true
+    },
+    {
+      "nome": "episodio_de_ferramenta_inteiro",
+      "observado": [
+        "SystemMessage",
+        "HumanMessage",
+        "AIMessage",
+        "ToolMessage",
+        "HumanMessage"
+      ],
+      "esperado": [
+        "SystemMessage",
+        "HumanMessage",
+        "AIMessage",
+        "ToolMessage",
+        "HumanMessage"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "resultado_orfao_recusado",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "orcamento_invalido",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "historico_preservado",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    }
+  ],
+  "evidencias": {
+    "comparacao": [
+      {
+        "politica": "completo",
+        "resposta": null,
+        "motivo": "contexto_excedido",
+        "fato_no_contexto": 5,
+        "estimativa": 650,
+        "esperado": 5,
+        "correta": false,
+        "fato_preservado": true,
+        "estimativa_preparacao": 0,
+        "uso_real": null
+      },
+      {
+        "politica": "janela",
+        "resposta": null,
+        "motivo": "insuficiente",
+        "fato_no_contexto": null,
+        "estimativa": 193,
+        "esperado": 5,
+        "correta": false,
+        "fato_preservado": false,
+        "estimativa_preparacao": 0,
+        "uso_real": null
+      },
+      {
+        "politica": "resumo",
+        "resposta": 5,
+        "motivo": "resposta",
+        "fato_no_contexto": 5,
+        "estimativa": 54,
+        "esperado": 5,
+        "correta": true,
+        "fato_preservado": true,
+        "estimativa_preparacao": 626,
+        "uso_real": null
+      },
+      {
+        "politica": "resumo_ruim",
+        "resposta": 9,
+        "motivo": "resposta",
+        "fato_no_contexto": 9,
+        "estimativa": 54,
+        "esperado": 5,
+        "correta": false,
+        "fato_preservado": false,
+        "estimativa_preparacao": 626,
+        "uso_real": null
+      }
+    ],
+    "contador": "aproximacao_4_caracteres",
+    "inferencias_reais": 0
+  }
+}

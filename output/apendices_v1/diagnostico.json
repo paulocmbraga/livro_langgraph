@@ -1,0 +1,9 @@
+{
+  "sem_reducer": "InvalidUpdateError",
+  "sem_termino": "GraphRecursionError",
+  "com_reducer": [
+    "a",
+    "b"
+  ],
+  "com_termino": 3
+}

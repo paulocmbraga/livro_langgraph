@@ -1,0 +1,33 @@
+{
+  "entrada": {
+    "acao": "mascarar",
+    "regra": "minimizacao_entrada",
+    "texto": "VPN para [EMAIL]",
+    "versao": "guardrails-1"
+  },
+  "segredo": {
+    "etapa": "entrada",
+    "acao": "bloquear",
+    "regra": "segredo_sintetico",
+    "versao": "guardrails-1"
+  },
+  "avaliacao_08": {
+    "casos": 5,
+    "tp": 1,
+    "fp": 1,
+    "tn": 1,
+    "fn": 2,
+    "deteccao": 0.3333333333333333,
+    "bloqueio_indevido": 0.5
+  },
+  "avaliacao_04": {
+    "casos": 5,
+    "tp": 2,
+    "fp": 1,
+    "tn": 1,
+    "fn": 1,
+    "deteccao": 0.6666666666666666,
+    "bloqueio_indevido": 0.5
+  },
+  "modelo_real": false
+}

@@ -1,0 +1,646 @@
+{
+  "capitulo": 16,
+  "casos": [
+    {
+      "nome": "unico_mesmos_seis",
+      "observado": 6,
+      "esperado": 6,
+      "confere": true
+    },
+    {
+      "nome": "delegado_mesmos_seis",
+      "observado": 5,
+      "esperado": 5,
+      "confere": true
+    },
+    {
+      "nome": "roteamento_ruim",
+      "observado": 4,
+      "esperado": 4,
+      "confere": true
+    },
+    {
+      "nome": "misto_exige_sintese",
+      "observado": [
+        "orcamento",
+        4
+      ],
+      "esperado": [
+        "orcamento",
+        4
+      ],
+      "confere": true
+    },
+    {
+      "nome": "misto_com_cinco",
+      "observado": [
+        true,
+        5
+      ],
+      "esperado": [
+        true,
+        5
+      ],
+      "confere": true
+    },
+    {
+      "nome": "delegacao_indevida",
+      "observado": 1,
+      "esperado": 1,
+      "confere": true
+    },
+    {
+      "nome": "tres_chamadas_para_vpn",
+      "observado": 3,
+      "esperado": 3,
+      "confere": true
+    },
+    {
+      "nome": "mais_estimativa_para_vpn",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "orcamento_zero",
+      "observado": 0,
+      "esperado": 0,
+      "confere": true
+    },
+    {
+      "nome": "especialista_repetido",
+      "observado": "sem_progresso",
+      "esperado": "sem_progresso",
+      "confere": true
+    },
+    {
+      "nome": "destino_fora_do_catalogo",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "transferencia_ao_pai",
+      "observado": {
+        "motivo": "exige_supervisao",
+        "destino": "revisor"
+      },
+      "esperado": {
+        "motivo": "exige_supervisao",
+        "destino": "revisor"
+      },
+      "confere": true
+    }
+  ],
+  "evidencias": {
+    "metricas": {
+      "unico": {
+        "tarefas": 6,
+        "corretas": 6,
+        "concluidas": 6,
+        "indevidas": 0,
+        "chamadas": 6,
+        "estimativa_total": 341,
+        "estimativa_por_tarefa_correta": 56.833333333333336,
+        "uso_real": null
+      },
+      "delegado": {
+        "tarefas": 6,
+        "corretas": 5,
+        "concluidas": 5,
+        "indevidas": 0,
+        "chamadas": 17,
+        "estimativa_total": 840,
+        "estimativa_por_tarefa_correta": 168.0,
+        "uso_real": null
+      },
+      "delegado_ruim": {
+        "tarefas": 6,
+        "corretas": 4,
+        "concluidas": 5,
+        "indevidas": 1,
+        "chamadas": 17,
+        "estimativa_total": 842,
+        "estimativa_por_tarefa_correta": 210.5,
+        "uso_real": null
+      }
+    },
+    "execucoes": [
+      {
+        "caso": "vpn",
+        "arquitetura": "unico",
+        "resposta": "Instale Aurora Connect.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 0,
+        "indevidas": 0,
+        "chamadas": 1,
+        "estimativa": 55,
+        "registros": [
+          {
+            "papel": "unico",
+            "entrada_estimada": 13,
+            "saida_estimada": 42,
+            "total_estimado": 55,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "status",
+        "arquitetura": "unico",
+        "resposta": "A-17 está aberto na revisão 3.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 0,
+        "indevidas": 0,
+        "chamadas": 1,
+        "estimativa": 55,
+        "registros": [
+          {
+            "papel": "unico",
+            "entrada_estimada": 11,
+            "saida_estimada": 44,
+            "total_estimado": 55,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "mista",
+        "arquitetura": "unico",
+        "resposta": "Instale Aurora Connect. | A-17 está aberto na revisão 3.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 0,
+        "indevidas": 0,
+        "chamadas": 1,
+        "estimativa": 91,
+        "registros": [
+          {
+            "papel": "unico",
+            "entrada_estimada": 15,
+            "saida_estimada": 76,
+            "total_estimado": 91,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "ambigua",
+        "arquitetura": "unico",
+        "resposta": "Esclareça o recurso e a intenção.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 0,
+        "indevidas": 0,
+        "chamadas": 1,
+        "estimativa": 21,
+        "registros": [
+          {
+            "papel": "unico",
+            "entrada_estimada": 11,
+            "saida_estimada": 10,
+            "total_estimado": 21,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "ausente",
+        "arquitetura": "unico",
+        "resposta": "Evidência insuficiente.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 0,
+        "indevidas": 0,
+        "chamadas": 1,
+        "estimativa": 58,
+        "registros": [
+          {
+            "papel": "unico",
+            "entrada_estimada": 15,
+            "saida_estimada": 43,
+            "total_estimado": 58,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "negacao",
+        "arquitetura": "unico",
+        "resposta": "Instale Aurora Connect.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 0,
+        "indevidas": 0,
+        "chamadas": 1,
+        "estimativa": 61,
+        "registros": [
+          {
+            "papel": "unico",
+            "entrada_estimada": 18,
+            "saida_estimada": 43,
+            "total_estimado": 61,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "vpn",
+        "arquitetura": "delegado",
+        "resposta": "Instale Aurora Connect.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 1,
+        "indevidas": 0,
+        "chamadas": 3,
+        "estimativa": 144,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 17,
+            "saida_estimada": 12,
+            "total_estimado": 29,
+            "uso_real": null
+          },
+          {
+            "papel": "conhecimento",
+            "entrada_estimada": 17,
+            "saida_estimada": 38,
+            "total_estimado": 55,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 49,
+            "saida_estimada": 11,
+            "total_estimado": 60,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "status",
+        "arquitetura": "delegado",
+        "resposta": "A-17 está aberto na revisão 3.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 1,
+        "indevidas": 0,
+        "chamadas": 3,
+        "estimativa": 143,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 15,
+            "saida_estimada": 12,
+            "total_estimado": 27,
+            "uso_real": null
+          },
+          {
+            "papel": "operacoes",
+            "entrada_estimada": 16,
+            "saida_estimada": 40,
+            "total_estimado": 56,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 49,
+            "saida_estimada": 11,
+            "total_estimado": 60,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "mista",
+        "arquitetura": "delegado",
+        "resposta": "",
+        "motivo": "orcamento",
+        "correta": false,
+        "delegacoes": 2,
+        "indevidas": 0,
+        "chamadas": 4,
+        "estimativa": 212,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 19,
+            "saida_estimada": 12,
+            "total_estimado": 31,
+            "uso_real": null
+          },
+          {
+            "papel": "conhecimento",
+            "entrada_estimada": 20,
+            "saida_estimada": 38,
+            "total_estimado": 58,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 52,
+            "saida_estimada": 12,
+            "total_estimado": 64,
+            "uso_real": null
+          },
+          {
+            "papel": "operacoes",
+            "entrada_estimada": 20,
+            "saida_estimada": 39,
+            "total_estimado": 59,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "ambigua",
+        "arquitetura": "delegado",
+        "resposta": "Esclareça o recurso e a intenção.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 0,
+        "indevidas": 0,
+        "chamadas": 1,
+        "estimativa": 26,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 15,
+            "saida_estimada": 11,
+            "total_estimado": 26,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "ausente",
+        "arquitetura": "delegado",
+        "resposta": "Evidência insuficiente.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 1,
+        "indevidas": 0,
+        "chamadas": 3,
+        "estimativa": 153,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 19,
+            "saida_estimada": 12,
+            "total_estimado": 31,
+            "uso_real": null
+          },
+          {
+            "papel": "conhecimento",
+            "entrada_estimada": 20,
+            "saida_estimada": 39,
+            "total_estimado": 59,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 52,
+            "saida_estimada": 11,
+            "total_estimado": 63,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "negacao",
+        "arquitetura": "delegado",
+        "resposta": "Instale Aurora Connect.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 1,
+        "indevidas": 0,
+        "chamadas": 3,
+        "estimativa": 162,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 22,
+            "saida_estimada": 12,
+            "total_estimado": 34,
+            "uso_real": null
+          },
+          {
+            "papel": "conhecimento",
+            "entrada_estimada": 23,
+            "saida_estimada": 39,
+            "total_estimado": 62,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 55,
+            "saida_estimada": 11,
+            "total_estimado": 66,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "vpn",
+        "arquitetura": "delegado_ruim",
+        "resposta": "Instale Aurora Connect.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 1,
+        "indevidas": 0,
+        "chamadas": 3,
+        "estimativa": 144,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 17,
+            "saida_estimada": 12,
+            "total_estimado": 29,
+            "uso_real": null
+          },
+          {
+            "papel": "conhecimento",
+            "entrada_estimada": 17,
+            "saida_estimada": 38,
+            "total_estimado": 55,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 49,
+            "saida_estimada": 11,
+            "total_estimado": 60,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "status",
+        "arquitetura": "delegado_ruim",
+        "resposta": "A-17 está aberto na revisão 3.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 1,
+        "indevidas": 0,
+        "chamadas": 3,
+        "estimativa": 143,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 15,
+            "saida_estimada": 12,
+            "total_estimado": 27,
+            "uso_real": null
+          },
+          {
+            "papel": "operacoes",
+            "entrada_estimada": 16,
+            "saida_estimada": 40,
+            "total_estimado": 56,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 49,
+            "saida_estimada": 11,
+            "total_estimado": 60,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "mista",
+        "arquitetura": "delegado_ruim",
+        "resposta": "",
+        "motivo": "orcamento",
+        "correta": false,
+        "delegacoes": 2,
+        "indevidas": 0,
+        "chamadas": 4,
+        "estimativa": 212,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 19,
+            "saida_estimada": 12,
+            "total_estimado": 31,
+            "uso_real": null
+          },
+          {
+            "papel": "conhecimento",
+            "entrada_estimada": 20,
+            "saida_estimada": 38,
+            "total_estimado": 58,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 52,
+            "saida_estimada": 12,
+            "total_estimado": 64,
+            "uso_real": null
+          },
+          {
+            "papel": "operacoes",
+            "entrada_estimada": 20,
+            "saida_estimada": 39,
+            "total_estimado": 59,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "ambigua",
+        "arquitetura": "delegado_ruim",
+        "resposta": "Esclareça o recurso e a intenção.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 0,
+        "indevidas": 0,
+        "chamadas": 1,
+        "estimativa": 26,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 15,
+            "saida_estimada": 11,
+            "total_estimado": 26,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "ausente",
+        "arquitetura": "delegado_ruim",
+        "resposta": "Evidência insuficiente.",
+        "motivo": "concluido",
+        "correta": true,
+        "delegacoes": 1,
+        "indevidas": 0,
+        "chamadas": 3,
+        "estimativa": 153,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 19,
+            "saida_estimada": 12,
+            "total_estimado": 31,
+            "uso_real": null
+          },
+          {
+            "papel": "conhecimento",
+            "entrada_estimada": 20,
+            "saida_estimada": 39,
+            "total_estimado": 59,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 52,
+            "saida_estimada": 11,
+            "total_estimado": 63,
+            "uso_real": null
+          }
+        ]
+      },
+      {
+        "caso": "negacao",
+        "arquitetura": "delegado_ruim",
+        "resposta": "A-17 está aberto na revisão 3.",
+        "motivo": "concluido",
+        "correta": false,
+        "delegacoes": 1,
+        "indevidas": 1,
+        "chamadas": 3,
+        "estimativa": 164,
+        "registros": [
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 22,
+            "saida_estimada": 12,
+            "total_estimado": 34,
+            "uso_real": null
+          },
+          {
+            "papel": "operacoes",
+            "entrada_estimada": 23,
+            "saida_estimada": 40,
+            "total_estimado": 63,
+            "uso_real": null
+          },
+          {
+            "papel": "supervisor",
+            "entrada_estimada": 56,
+            "saida_estimada": 11,
+            "total_estimado": 67,
+            "uso_real": null
+          }
+        ]
+      }
+    ],
+    "inferencias_reais": 0
+  }
+}

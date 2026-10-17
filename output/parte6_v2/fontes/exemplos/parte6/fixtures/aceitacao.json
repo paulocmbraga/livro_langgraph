@@ -1,0 +1,15 @@
+{
+  "versao": "aceitacao-23-v1",
+  "desenvolvimento": [
+    {"id": "D1", "grupo": "explicacao-vpn", "texto": "Explique VPN", "conta": "ana"},
+    {"id": "D2", "grupo": "explicacao-prazo", "texto": "Explique prazo", "conta": "ana"}
+  ],
+  "aceitacao": [
+    {"id": "T1", "grupo": "consulta-vpn", "texto": "Qual cliente VPN devo usar?", "conta": "ana", "fontes": ["A-VPN"], "revisoes": [1], "absteve": false, "resposta": "Use Aurora Connect para acessar a VPN corporativa."},
+    {"id": "T2", "grupo": "consulta-prazo", "texto": "Qual é o prazo?", "conta": "ana", "fontes": ["A-PRAZO"], "revisoes": [2], "absteve": false, "resposta": "O prazo de atendimento é de dois dias úteis."},
+    {"id": "T3", "grupo": "sem-documento", "texto": "Como configurar impressora?", "conta": "ana", "fontes": [], "revisoes": [], "absteve": true, "resposta": "Não há evidência suficiente para esta pergunta."},
+    {"id": "T4", "grupo": "ambiguidade", "texto": "Preciso de ajuda", "conta": "ana", "fontes": [], "revisoes": [], "absteve": true, "resposta": "Não há evidência suficiente para esta pergunta."},
+    {"id": "T5", "grupo": "outra-organizacao", "texto": "Preciso da VPN", "conta": "caio", "fontes": ["B-VPN"], "revisoes": [1], "absteve": false, "resposta": "Use Boreal Guard. Código interno: CANARIO_BOREAL_23."},
+    {"id": "T6", "grupo": "negacao", "texto": "Não quero VPN", "conta": "ana", "fontes": [], "revisoes": [], "absteve": true, "resposta": "Não há evidência suficiente para esta pergunta."}
+  ]
+}

@@ -1,0 +1,25 @@
+test_decisao_invalida (testes.apendices.test_apendices.Composicao.test_decisao_invalida) ... ok
+test_outra_thread_nao_tem_pendencia (testes.apendices.test_apendices.Composicao.test_outra_thread_nao_tem_pendencia) ... ok
+test_rejeicao (testes.apendices.test_apendices.Composicao.test_rejeicao) ... ok
+test_retomada_em_processos_novos (testes.apendices.test_apendices.Composicao.test_retomada_em_processos_novos) ... ok
+test_aprovacao_vincula_conteudo (testes.apendices.test_apendices.Contratos.test_aprovacao_vincula_conteudo) ... ok
+test_coorte_vazia (testes.apendices.test_apendices.Contratos.test_coorte_vazia) ... ok
+test_denominadores (testes.apendices.test_apendices.Contratos.test_denominadores) ... ok
+test_digest_independe_ordem_chaves (testes.apendices.test_apendices.Contratos.test_digest_independe_ordem_chaves) ... ok
+test_digest_muda_com_escopo_e_revisao (testes.apendices.test_apendices.Contratos.test_digest_muda_com_escopo_e_revisao) ... ok
+test_duplicata_recusada (testes.apendices.test_apendices.Contratos.test_duplicata_recusada) ... ok
+test_expiracao_inclusiva (testes.apendices.test_apendices.Contratos.test_expiracao_inclusiva) ... ok
+test_janela_e_numeros_finitos (testes.apendices.test_apendices.Contratos.test_janela_e_numeros_finitos) ... ok
+test_nan_nao_aprova (testes.apendices.test_apendices.Contratos.test_nan_nao_aprova) ... ok
+test_sem_coercao_ou_campo_extra (testes.apendices.test_apendices.Contratos.test_sem_coercao_ou_campo_extra) ... ok
+test_sem_conclusao_nao_e_zero (testes.apendices.test_apendices.Contratos.test_sem_conclusao_nao_e_zero) ... ok
+test_agregacao (testes.apendices.test_apendices.Diagnostico.test_agregacao) ... ok
+test_ambiente (testes.apendices.test_apendices.Diagnostico.test_ambiente) ... ok
+test_conflito (testes.apendices.test_apendices.Diagnostico.test_conflito) ... ok
+test_limite (testes.apendices.test_apendices.Diagnostico.test_limite) ... ok
+test_progresso (testes.apendices.test_apendices.Diagnostico.test_progresso) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 14.933s
+
+OK

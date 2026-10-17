@@ -1,0 +1,194 @@
+{
+  "capitulo": 23,
+  "casos": [
+    {
+      "nome": "aceitacao_T1",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "aceitacao_T2",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "aceitacao_T3",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "aceitacao_T4",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "aceitacao_T5",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "aceitacao_T6",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "cache_mesma_base",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "base_atualizada",
+      "observado": [
+        "corpus-2",
+        false,
+        2
+      ],
+      "esperado": [
+        "corpus-2",
+        false,
+        2
+      ],
+      "confere": true
+    },
+    {
+      "nome": "memoria_com_escopo",
+      "observado": [
+        "detalhado",
+        "curto"
+      ],
+      "esperado": [
+        "detalhado",
+        "curto"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "contexto_insuficiente",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "fonte_de_outra_org_ausente",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "revogacao_impede_consulta",
+      "observado": 403,
+      "esperado": 403,
+      "confere": true
+    }
+  ],
+  "avaliacao": {
+    "versao": "aceitacao-23-v1",
+    "casos": [
+      {
+        "caso": "T1",
+        "correta": true,
+        "saida": {
+          "absteve": false,
+          "cache": false,
+          "corpus": "corpus-1",
+          "fontes": [
+            {
+              "id": "A-VPN",
+              "revisao": 1,
+              "trecho": "Use Aurora Connect para acessar a VPN corporativa."
+            }
+          ],
+          "formato": "curto",
+          "resposta": "Use Aurora Connect para acessar a VPN corporativa.",
+          "situacao": "concluida"
+        }
+      },
+      {
+        "caso": "T2",
+        "correta": true,
+        "saida": {
+          "absteve": false,
+          "cache": false,
+          "corpus": "corpus-1",
+          "fontes": [
+            {
+              "id": "A-PRAZO",
+              "revisao": 2,
+              "trecho": "O prazo de atendimento é de dois dias úteis."
+            }
+          ],
+          "formato": "curto",
+          "resposta": "O prazo de atendimento é de dois dias úteis.",
+          "situacao": "concluida"
+        }
+      },
+      {
+        "caso": "T3",
+        "correta": true,
+        "saida": {
+          "absteve": true,
+          "cache": false,
+          "corpus": "corpus-1",
+          "fontes": [],
+          "formato": "curto",
+          "resposta": "Não há evidência suficiente para esta pergunta.",
+          "situacao": "concluida"
+        }
+      },
+      {
+        "caso": "T4",
+        "correta": true,
+        "saida": {
+          "absteve": true,
+          "cache": false,
+          "corpus": "corpus-1",
+          "fontes": [],
+          "formato": "curto",
+          "resposta": "Não há evidência suficiente para esta pergunta.",
+          "situacao": "concluida"
+        }
+      },
+      {
+        "caso": "T5",
+        "correta": true,
+        "saida": {
+          "absteve": false,
+          "cache": false,
+          "corpus": "corpus-1",
+          "fontes": [
+            {
+              "id": "B-VPN",
+              "revisao": 1,
+              "trecho": "Use Boreal Guard. Código interno: CANARIO_BOREAL_23."
+            }
+          ],
+          "formato": "curto",
+          "resposta": "Use Boreal Guard. Código interno: CANARIO_BOREAL_23.",
+          "situacao": "concluida"
+        }
+      },
+      {
+        "caso": "T6",
+        "correta": true,
+        "saida": {
+          "absteve": true,
+          "cache": false,
+          "corpus": "corpus-1",
+          "fontes": [],
+          "formato": "curto",
+          "resposta": "Não há evidência suficiente para esta pergunta.",
+          "situacao": "concluida"
+        }
+      }
+    ],
+    "corretos": 6,
+    "inferencia_real": false
+  }
+}

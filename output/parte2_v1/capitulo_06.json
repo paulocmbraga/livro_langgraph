@@ -1,0 +1,143 @@
+{
+  "capitulo": 6,
+  "casos": [
+    {
+      "nome": "conhecida",
+      "observado": [
+        true,
+        true,
+        "t1"
+      ],
+      "esperado": [
+        true,
+        true,
+        "t1"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "nome",
+      "observado": [
+        "ferramenta_desconhecida",
+        false,
+        "t1"
+      ],
+      "esperado": [
+        "ferramenta_desconhecida",
+        false,
+        "t1"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "tipo",
+      "observado": [
+        "argumentos_invalidos",
+        false,
+        "t1"
+      ],
+      "esperado": [
+        "argumentos_invalidos",
+        false,
+        "t1"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "campo_extra",
+      "observado": [
+        "argumentos_invalidos",
+        false,
+        "t1"
+      ],
+      "esperado": [
+        "argumentos_invalidos",
+        false,
+        "t1"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "sem_escopo",
+      "observado": [
+        "sem_permissao",
+        false,
+        "t1"
+      ],
+      "esperado": [
+        "sem_permissao",
+        false,
+        "t1"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "ausente",
+      "observado": [
+        "indisponivel",
+        true,
+        "t1"
+      ],
+      "esperado": [
+        "indisponivel",
+        true,
+        "t1"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "outra_org",
+      "observado": [
+        "indisponivel",
+        true,
+        "t1"
+      ],
+      "esperado": [
+        "indisponivel",
+        true,
+        "t1"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "proposta_sem_efeito",
+      "observado": [
+        "em_analise",
+        true
+      ],
+      "esperado": [
+        "em_analise",
+        true
+      ],
+      "confere": true
+    },
+    {
+      "nome": "ids_duplicados",
+      "observado": "lote_invalido",
+      "esperado": "lote_invalido",
+      "confere": true
+    },
+    {
+      "nome": "atalho_toolnode",
+      "observado": {
+        "ok": true,
+        "dados": {
+          "id": "A-17",
+          "revisao": 3,
+          "status": "aberto",
+          "usuarios": 80
+        }
+      },
+      "esperado": {
+        "ok": true,
+        "dados": {
+          "id": "A-17",
+          "revisao": 3,
+          "status": "aberto",
+          "usuarios": 80
+        }
+      },
+      "confere": true
+    }
+  ]
+}

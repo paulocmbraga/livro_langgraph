@@ -1,0 +1,28 @@
+{
+  "graph": {
+    "inicio": {
+      "status": "revisao",
+      "proposta": "AURORA"
+    },
+    "fim": {
+      "status": "concluida",
+      "proposta": "AURORA",
+      "aprovado": true
+    },
+    "preparos": 1,
+    "reentradas_corpo": 2
+  },
+  "functional": {
+    "inicio": {
+      "status": "revisao",
+      "proposta": "AURORA"
+    },
+    "fim": {
+      "status": "concluida",
+      "proposta": "AURORA",
+      "aprovado": true
+    },
+    "preparos": 1,
+    "reentradas_corpo": 2
+  }
+}

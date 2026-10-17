@@ -1,0 +1,15 @@
+{
+  "versao": "1.0",
+  "estados": [
+    "TASK_STATE_INPUT_REQUIRED",
+    "TASK_STATE_COMPLETED",
+    "TASK_STATE_CANCELED"
+  ],
+  "artefato": {
+    "prioridade": "alta",
+    "fonte": "D1",
+    "revisao": 1,
+    "texto": "Recomendação preparada para revisão local."
+  },
+  "transporte": "HTTP loopback / JSONRPC"
+}

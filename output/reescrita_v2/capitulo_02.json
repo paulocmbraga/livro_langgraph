@@ -1,0 +1,95 @@
+{
+  "capitulo": 2,
+  "casos": [
+    {
+      "caso": "contexto_50",
+      "observado": "P1",
+      "esperado": "P1",
+      "confere": true
+    },
+    {
+      "caso": "contexto_100",
+      "observado": "P2",
+      "esperado": "P2",
+      "confere": true
+    },
+    {
+      "caso": "campo_ausente",
+      "observado": "entrada:campos",
+      "esperado": "entrada:campos",
+      "confere": true
+    },
+    {
+      "caso": "campo_extra",
+      "observado": "entrada:campos",
+      "esperado": "entrada:campos",
+      "confere": true
+    },
+    {
+      "caso": "numero_textual",
+      "observado": "entrada:usuarios",
+      "esperado": "entrada:usuarios",
+      "confere": true
+    },
+    {
+      "caso": "booleano",
+      "observado": "entrada:usuarios",
+      "esperado": "entrada:usuarios",
+      "confere": true
+    },
+    {
+      "caso": "negativo",
+      "observado": "entrada:usuarios",
+      "esperado": "entrada:usuarios",
+      "confere": true
+    },
+    {
+      "caso": "tipo_desconhecido",
+      "observado": "entrada:tipo",
+      "esperado": "entrada:tipo",
+      "confere": true
+    },
+    {
+      "caso": "descricao_vazia",
+      "observado": "entrada:descricao",
+      "esperado": "entrada:descricao",
+      "confere": true
+    },
+    {
+      "caso": "normalizacao",
+      "observado": [
+        "Portal indisponivel",
+        "  Portal indisponivel  "
+      ],
+      "esperado": [
+        "Portal indisponivel",
+        "  Portal indisponivel  "
+      ],
+      "confere": true
+    },
+    {
+      "caso": "anotacao_nao_recusa_booleano",
+      "observado": "P2",
+      "esperado": "P2",
+      "confere": true
+    },
+    {
+      "caso": "saida_de_outro_chamado",
+      "observado": "saida:id",
+      "esperado": "saida:id",
+      "confere": true
+    },
+    {
+      "caso": "projecao_e_stream",
+      "observado": [
+        false,
+        true
+      ],
+      "esperado": [
+        false,
+        true
+      ],
+      "confere": true
+    }
+  ]
+}

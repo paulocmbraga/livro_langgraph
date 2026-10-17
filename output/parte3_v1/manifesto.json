@@ -1,0 +1,100 @@
+{
+  "parte": 3,
+  "completo": true,
+  "instante_utc": "2026-10-16T22:19:49.076984+00:00",
+  "ambiente": {
+    "python": "3.12.0",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "pacotes": {
+      "aiosqlite": "0.22.1",
+      "annotated-types": "0.8.0",
+      "anyio": "4.15.1",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.5.2",
+      "distro": "1.9.0",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httpcore2": "2.13.1",
+      "httpx": "0.28.1",
+      "httpx2": "2.13.1",
+      "idna": "3.20",
+      "jsonpatch": "1.35",
+      "jsonpointer": "3.2.1",
+      "langchain-core": "1.6.11",
+      "langchain-protocol": "0.0.19",
+      "langgraph": "1.2.15",
+      "langgraph-checkpoint": "4.3.0",
+      "langgraph-checkpoint-sqlite": "3.1.2",
+      "langgraph-prebuilt": "1.1.1",
+      "langgraph-sdk": "0.4.7",
+      "langsmith": "0.14.11",
+      "orjson": "3.13.0",
+      "ormsgpack": "1.13.0",
+      "packaging": "26.3",
+      "pydantic": "2.14.1",
+      "pydantic_core": "2.50.1",
+      "PyYAML": "6.0.3",
+      "requests": "2.34.2",
+      "requests-toolbelt": "1.0.0",
+      "sniffio": "1.3.1",
+      "sqlite-vec": "0.1.9",
+      "tenacity": "9.2.1",
+      "truststore": "0.10.5",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0",
+      "urllib3": "2.8.0",
+      "uuid_utils": "0.17.1",
+      "websockets": "16.1.1",
+      "xxhash": "4.0.1",
+      "zstandard": "0.25.0"
+    }
+  },
+  "fontes": {
+    "exemplos/__init__.py": "f451cce770ff545975929e25afc5f1639eb4ef917acbea340c4a2ac9ffeb5235",
+    "exemplos/parte3/__init__.py": "8992858ef5a149156ecd244c9b3ccbb927b40591ea993f20b9989582c3da00ec",
+    "exemplos/parte3/cap09.py": "e9327cdc114467d45f25994b1843d2c602e8126980aefa21aab1220373c6314b",
+    "exemplos/parte3/cap10.py": "bd4422ae38b51bfd6bb262d80da60ce152c912a74f39c970dd4d12e650a6db19",
+    "exemplos/parte3/cap11.py": "46265456b776cdaa32b5c6d132ae86ab59402e301fd5e4903a65c6817704d465",
+    "exemplos/parte3/cap12.py": "834789f25f2a290782048a89b8629cb5150181ac6ec6f0aec7e1178714cbd87f",
+    "exemplos/parte3/destino.py": "6a4169af18190d31f37482625d10a89dc64731fc637f86d30014c698613ebe5b",
+    "exemplos/parte3/fixtures/estado_v1.json": "0383689701d4976e3e5011f0801f9c6c0a8db50102482eab25816beb423fe58e",
+    "exemplos/parte3/laboratorios.py": "cc58905b6fa4c77f78b2abc478ff83e8f5439cd7095a117fd84a07ca0bc2f9ed",
+    "exemplos/parte3/processo.py": "b4f34c0cd92b7f107091732c1c134cadf76cfb127a3ae555b83ebf781c535749",
+    "exemplos/parte3/solucoes.py": "84da6160d4c3fd6f66106fa6d28488822308f9acab50a323c4027f4f5219145a",
+    "requirements.lock.txt": "d450144e4b534bd1fc7793906d90ebce0deeb113f460f81dac183b9e77b37124",
+    "scripts/capturar.py": "704ff67cb309cb37d84cdf640e9479ae88190502f49096051cb2fcbcc180acdd",
+    "scripts/conferir_livro.py": "beed5f07b9acc356bfee1e166351e81065b5a2004018922375358b99f306ae71",
+    "scripts/parte3/__init__.py": "3fc87a7304e86e1b6c7b54aaadc1613e48328db968f9d36a7255f39771de5d5a",
+    "scripts/parte3/capturar.py": "17d914909613660070543e67e6715cb87f15d3e1c157b7a2c9e1884dec8bab0f",
+    "scripts/parte3/conferir.py": "1c4441d2c228e64f319ea9db4924e70cbe8fd71b41b7f0dc4a8a236156a603bc",
+    "testes/parte3/__init__.py": "f1f69b82a9ccf80261167a5a21eb5b8d30cd145e950d358e62223375ba899171",
+    "testes/parte3/test_parte3.py": "fe33e2174191ab1a69b7d8cc8aa00a92fd9b5e99cf9c82a5bfd6cf8eb1f170cf"
+  },
+  "resultados": [
+    {
+      "capitulo": 9,
+      "casos": 13,
+      "arquivo": "capitulo_09.json",
+      "sha256": "c7d038f2014afd9dec89457369b8b4f00136ab54167c73f5f3f8bd5fc87dcad7"
+    },
+    {
+      "capitulo": 10,
+      "casos": 12,
+      "arquivo": "capitulo_10.json",
+      "sha256": "390f2abd72f6ebb2d3a180920c68f24dc23a820b8ac0a186fe607a408bbe1f7c"
+    },
+    {
+      "capitulo": 11,
+      "casos": 12,
+      "arquivo": "capitulo_11.json",
+      "sha256": "71d1d823e7ad5ed5a04f2d06031dfdb37536149f34a49ce55fab8c655d197d61"
+    },
+    {
+      "capitulo": 12,
+      "casos": 12,
+      "arquivo": "capitulo_12.json",
+      "sha256": "2e9198db1020af8a18ae54d52f958013627052cbc76d8afddb900c29f0fc26c2"
+    }
+  ],
+  "inferencia_real": false
+}

@@ -1,0 +1,181 @@
+{
+  "capitulo": 7,
+  "casos": [
+    {
+      "nome": "concluida",
+      "observado": [
+        "concluida",
+        true,
+        2,
+        1
+      ],
+      "esperado": [
+        "concluida",
+        true,
+        2,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "sem_consulta",
+      "observado": [
+        "sem_sustentacao",
+        false,
+        1,
+        0
+      ],
+      "esperado": [
+        "sem_sustentacao",
+        false,
+        1,
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "status_errado",
+      "observado": [
+        "sem_sustentacao",
+        false,
+        2,
+        1
+      ],
+      "esperado": [
+        "sem_sustentacao",
+        false,
+        2,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "repeticao",
+      "observado": [
+        "repeticao",
+        false,
+        2,
+        1
+      ],
+      "esperado": [
+        "repeticao",
+        false,
+        2,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "sem_progresso",
+      "observado": [
+        "sem_progresso",
+        false,
+        2,
+        2
+      ],
+      "esperado": [
+        "sem_progresso",
+        false,
+        2,
+        2
+      ],
+      "confere": true
+    },
+    {
+      "nome": "limite_modelo",
+      "observado": [
+        "orcamento_modelo",
+        false,
+        1,
+        1
+      ],
+      "esperado": [
+        "orcamento_modelo",
+        false,
+        1,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "limite_ferramenta",
+      "observado": [
+        "orcamento_ferramenta",
+        false,
+        2,
+        1
+      ],
+      "esperado": [
+        "orcamento_ferramenta",
+        false,
+        2,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "prazo_antes",
+      "observado": [
+        "prazo",
+        false,
+        0,
+        0
+      ],
+      "esperado": [
+        "prazo",
+        false,
+        0,
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "prazo_depois",
+      "observado": [
+        "prazo",
+        false,
+        1,
+        0
+      ],
+      "esperado": [
+        "prazo",
+        false,
+        1,
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "inconclusiva",
+      "observado": [
+        "inconclusiva",
+        false,
+        1,
+        0
+      ],
+      "esperado": [
+        "inconclusiva",
+        false,
+        1,
+        0
+      ],
+      "confere": true
+    },
+    {
+      "nome": "modelo_falhou",
+      "observado": [
+        "falha_modelo",
+        false,
+        1,
+        0
+      ],
+      "esperado": [
+        "falha_modelo",
+        false,
+        1,
+        0
+      ],
+      "confere": true
+    }
+  ]
+}

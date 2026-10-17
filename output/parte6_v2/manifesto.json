@@ -1,0 +1,103 @@
+{
+  "parte": 6,
+  "completo": true,
+  "instante_utc": "2026-10-17T01:44:18.780006+00:00",
+  "ambiente": {
+    "python": "3.12.0",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "pacotes": {
+      "aiosqlite": "0.22.1",
+      "annotated-types": "0.8.0",
+      "anyio": "4.15.1",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.5.2",
+      "distro": "1.9.0",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httpcore2": "2.13.1",
+      "httpx": "0.28.1",
+      "httpx2": "2.13.1",
+      "idna": "3.20",
+      "jsonpatch": "1.35",
+      "jsonpointer": "3.2.1",
+      "langchain-core": "1.6.11",
+      "langchain-protocol": "0.0.19",
+      "langgraph": "1.2.15",
+      "langgraph-checkpoint": "4.3.0",
+      "langgraph-checkpoint-sqlite": "3.1.2",
+      "langgraph-prebuilt": "1.1.1",
+      "langgraph-sdk": "0.4.7",
+      "langsmith": "0.14.11",
+      "orjson": "3.13.0",
+      "ormsgpack": "1.13.0",
+      "packaging": "26.3",
+      "pydantic": "2.14.1",
+      "pydantic_core": "2.50.1",
+      "PyYAML": "6.0.3",
+      "requests": "2.34.2",
+      "requests-toolbelt": "1.0.0",
+      "sniffio": "1.3.1",
+      "sqlite-vec": "0.1.9",
+      "tenacity": "9.2.1",
+      "truststore": "0.10.5",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0",
+      "urllib3": "2.8.0",
+      "uuid_utils": "0.17.1",
+      "websockets": "16.1.1",
+      "xxhash": "4.0.1",
+      "zstandard": "0.25.0"
+    }
+  },
+  "fontes": {
+    "exemplos/__init__.py": "f451cce770ff545975929e25afc5f1639eb4ef917acbea340c4a2ac9ffeb5235",
+    "exemplos/parte6/__init__.py": "9d8054d68243d2bd2298c4d135c8efaeecdc25b3676cd2ceed85b158c2ac382a",
+    "exemplos/parte6/base.py": "e4c723b4eefc4a0a034570c31a18de396a4a2689db3a0a0d2e3211845227609a",
+    "exemplos/parte6/cap21.py": "3893ecfdc226e4d9e48dccc65a7af4124e89450aef0d9dc96c0d556ee423e610",
+    "exemplos/parte6/cap22.py": "7812178e9a1d2f309e07f202d0f53f0eff2cf109f5b1ae516810c07c8345adb9",
+    "exemplos/parte6/cap23.py": "0da5fd55317f9d04642c932571934f358519a21700480dd0a8a8ac42ea580135",
+    "exemplos/parte6/cap24.py": "5d1e4fa8ef9e7102c2c8b967d2457c701a6f1b30f62ba080a4d03306a330366f",
+    "exemplos/parte6/ensaios.py": "959033ef8c516574150d02d2e6ec27d319e66bb954ec523201fe26591b3db7ed",
+    "exemplos/parte6/fila.py": "88e4b74ce66fa2c2cacdab77a24ddf28718f5b9ddb7c01179cd42aec0a58fa29",
+    "exemplos/parte6/fixtures/aceitacao.json": "d62d3058977eef440767454f9d6f9cbb11cc0eb775ab76ad4ccf24b143350cba",
+    "exemplos/parte6/fixtures/corpus.json": "424a4e4ae6804dd0497ac7ab61fa837c2a32767871fac949fc86d2b0006904e9",
+    "exemplos/parte6/interface.html": "87a4de862f32d1ab14b2f5452ccfc9a3de0cb78574a9082f8c6c7afc34808356",
+    "exemplos/parte6/laboratorios.py": "e852bfa489a7c7e9594bd0482617d58dcc6d6431dd06cdc1133ec3d90590ead5",
+    "exemplos/parte6/servico.py": "46ae5ac8ea2290898071c225eaab676a7b8194782ffa475040ad2859d5f16e22",
+    "requirements.lock.txt": "d450144e4b534bd1fc7793906d90ebce0deeb113f460f81dac183b9e77b37124",
+    "scripts/capturar.py": "704ff67cb309cb37d84cdf640e9479ae88190502f49096051cb2fcbcc180acdd",
+    "scripts/conferir_livro.py": "beed5f07b9acc356bfee1e166351e81065b5a2004018922375358b99f306ae71",
+    "scripts/parte6/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/parte6/capturar.py": "bf6f2aeb47c7f205178cff2d6d068b229880a5072683a31ec1a14e837b81db36",
+    "scripts/parte6/conferir.py": "5b52c8073ab11ef3554d258ba456cccbd8b28dd4072973ca4e9d274793615099",
+    "testes/parte6/__init__.py": "a1957f30ed74a3902d034a96557d38e3560b60b246530acbdf2ec036533b38e8",
+    "testes/parte6/test_parte6.py": "1168207a43ac82005757a0a592a05b0ca489f5c9ae6fcc24d02cc1f8a6021bab"
+  },
+  "resultados": [
+    {
+      "capitulo": 21,
+      "casos": 12,
+      "arquivo": "capitulo_21.json",
+      "sha256": "55c3d82ba266ac47cf6e4ad4b05040d54fc7b339ef36da0aa4e1a0ce92a3cf15"
+    },
+    {
+      "capitulo": 22,
+      "casos": 12,
+      "arquivo": "capitulo_22.json",
+      "sha256": "d74805027815497503b11bc6368149f25f42e0ed85f85426a57a600978193edc"
+    },
+    {
+      "capitulo": 23,
+      "casos": 12,
+      "arquivo": "capitulo_23.json",
+      "sha256": "17675da6aa7255fdc322298f7feccb769c173bfa06e363e1a851b16c3335f77b"
+    },
+    {
+      "capitulo": 24,
+      "casos": 12,
+      "arquivo": "capitulo_24.json",
+      "sha256": "652c27ce8e31232659b977ffe758eb2a2eed3a0fb03629ee22bcd4c659c887c3"
+    }
+  ],
+  "inferencia_real": false
+}

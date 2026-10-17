@@ -1,0 +1,150 @@
+{
+  "capitulo": 15,
+  "casos": [
+    {
+      "nome": "saida_direta_projetada",
+      "observado": [
+        "fonte",
+        "resposta",
+        "situacao"
+      ],
+      "esperado": [
+        "fonte",
+        "resposta",
+        "situacao"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "pai_pendente",
+      "observado": [
+        "consultar"
+      ],
+      "esperado": [
+        "consultar"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "filho_pendente",
+      "observado": [
+        "revisar"
+      ],
+      "esperado": [
+        "revisar"
+      ],
+      "confere": true
+    },
+    {
+      "nome": "entrada_minima",
+      "observado": false,
+      "esperado": false,
+      "confere": true
+    },
+    {
+      "nome": "namespace_aninhado",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "retomada_apos_reabrir",
+      "observado": {
+        "resposta": "Instale Aurora Connect.",
+        "fonte": "VPN-r2",
+        "situacao": "resposta"
+      },
+      "esperado": {
+        "resposta": "Instale Aurora Connect.",
+        "fonte": "VPN-r2",
+        "situacao": "resposta"
+      },
+      "confere": true
+    },
+    {
+      "nome": "reentrada_sem_nova_busca",
+      "observado": {
+        "entradas_pai": 2,
+        "buscas": 1,
+        "revisoes": 2
+      },
+      "esperado": {
+        "entradas_pai": 2,
+        "buscas": 1,
+        "revisoes": 2
+      },
+      "confere": true
+    },
+    {
+      "nome": "bruto_nao_sai_no_contrato",
+      "observado": false,
+      "esperado": false,
+      "confere": true
+    },
+    {
+      "nome": "revisao_divergente",
+      "observado": "recusada",
+      "esperado": "recusada",
+      "confere": true
+    },
+    {
+      "nome": "eventos_projetados",
+      "observado": [
+        true,
+        [
+          {
+            "fonte": "VPN-r2",
+            "resposta": "Instale Aurora Connect.",
+            "situacao": "resposta"
+          }
+        ]
+      ],
+      "esperado": [
+        true,
+        [
+          {
+            "resposta": "Instale Aurora Connect.",
+            "fonte": "VPN-r2",
+            "situacao": "resposta"
+          }
+        ]
+      ],
+      "confere": true
+    },
+    {
+      "nome": "contador_False",
+      "observado": [
+        1,
+        1
+      ],
+      "esperado": [
+        1,
+        1
+      ],
+      "confere": true
+    },
+    {
+      "nome": "contador_True",
+      "observado": [
+        1,
+        2
+      ],
+      "esperado": [
+        1,
+        2
+      ],
+      "confere": true
+    }
+  ],
+  "evidencias": {
+    "eventos_brutos": 4,
+    "eventos_publicos": [
+      {
+        "fonte": "VPN-r2",
+        "resposta": "Instale Aurora Connect.",
+        "situacao": "resposta"
+      }
+    ],
+    "retomada": "mesmo processo, conexao SQLite reaberta"
+  }
+}

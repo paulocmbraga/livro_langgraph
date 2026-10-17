@@ -1,0 +1,165 @@
+{
+  "capitulo": 17,
+  "inferencia_real": false,
+  "casos": [
+    {
+      "nome": "referencia_satisfaz_oraculos",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "final_sozinha_perde_tres_defeitos",
+      "observado": [
+        true,
+        true,
+        true
+      ],
+      "esperado": [
+        true,
+        true,
+        true
+      ],
+      "confere": true
+    },
+    {
+      "nome": "evidencia_perdida",
+      "observado": false,
+      "esperado": false,
+      "confere": true
+    },
+    {
+      "nome": "acao_modificada",
+      "observado": false,
+      "esperado": false,
+      "confere": true
+    },
+    {
+      "nome": "conclusao_sem_recibo",
+      "observado": false,
+      "esperado": false,
+      "confere": true
+    },
+    {
+      "nome": "controle_equivalente",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "alteracao_recusada_pela_referencia",
+      "observado": "acao_alterada",
+      "esperado": "acao_alterada",
+      "confere": true
+    },
+    {
+      "nome": "rejeicao_sem_efeito",
+      "observado": [],
+      "esperado": [],
+      "confere": true
+    },
+    {
+      "nome": "pausa_antes_do_destino",
+      "observado": [
+        [
+          "revisar"
+        ],
+        []
+      ],
+      "esperado": [
+        [
+          "revisar"
+        ],
+        []
+      ],
+      "confere": true
+    },
+    {
+      "nome": "no_isolado_sem_percurso",
+      "observado": [
+        [
+          "coletar"
+        ],
+        true
+      ],
+      "esperado": [
+        [
+          "coletar"
+        ],
+        true
+      ],
+      "confere": true
+    },
+    {
+      "nome": "ordem_parcial_violada",
+      "observado": false,
+      "esperado": false,
+      "confere": true
+    },
+    {
+      "nome": "permutacao_e_idempotencia",
+      "observado": [
+        true,
+        true
+      ],
+      "esperado": [
+        true,
+        true
+      ],
+      "confere": true
+    }
+  ],
+  "matriz_defeitos": [
+    {
+      "variante": "referencia",
+      "oraculos": {
+        "resposta_final": true,
+        "evidencia": true,
+        "efeito_revisado": true,
+        "recibo": true,
+        "ordem": true
+      }
+    },
+    {
+      "variante": "perder_evidencia",
+      "oraculos": {
+        "resposta_final": true,
+        "evidencia": false,
+        "efeito_revisado": true,
+        "recibo": true,
+        "ordem": true
+      }
+    },
+    {
+      "variante": "aceitar_alteracao",
+      "oraculos": {
+        "resposta_final": true,
+        "evidencia": true,
+        "efeito_revisado": false,
+        "recibo": true,
+        "ordem": true
+      }
+    },
+    {
+      "variante": "finalizar_cedo",
+      "oraculos": {
+        "resposta_final": true,
+        "evidencia": true,
+        "efeito_revisado": false,
+        "recibo": false,
+        "ordem": false
+      }
+    },
+    {
+      "variante": "metadado_inofensivo",
+      "oraculos": {
+        "resposta_final": true,
+        "evidencia": true,
+        "efeito_revisado": true,
+        "recibo": true,
+        "ordem": true
+      }
+    }
+  ],
+  "permutacoes_examinadas": 6
+}

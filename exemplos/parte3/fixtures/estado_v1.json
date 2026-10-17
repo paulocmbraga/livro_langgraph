@@ -1,0 +1,11 @@
+{
+  "versao": 1,
+  "proposta": {
+    "operacao": "op-legada",
+    "organizacao": "aurora",
+    "chamado_id": "A-17",
+    "novo_status": "em_analise"
+  },
+  "aprovacao": null,
+  "situacao": "nova"
+}

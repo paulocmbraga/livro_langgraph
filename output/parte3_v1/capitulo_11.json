@@ -1,0 +1,129 @@
+{
+  "capitulo": 11,
+  "casos": [
+    {
+      "nome": "retry_transitorio",
+      "observado": [
+        17,
+        3
+      ],
+      "esperado": [
+        17,
+        3
+      ],
+      "confere": true
+    },
+    {
+      "nome": "definitiva_nao_repete",
+      "observado": 1,
+      "esperado": 1,
+      "confere": true
+    },
+    {
+      "nome": "orcamento_esgotado",
+      "observado": 3,
+      "esperado": 3,
+      "confere": true
+    },
+    {
+      "nome": "pending_writes",
+      "observado": [
+        {
+          "a": 1,
+          "b": 2
+        },
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "esperado": [
+        {
+          "a": 1,
+          "b": 2
+        },
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "confere": true
+    },
+    {
+      "nome": "posse_ativa",
+      "observado": [
+        1,
+        null
+      ],
+      "esperado": [
+        1,
+        null
+      ],
+      "confere": true
+    },
+    {
+      "nome": "posse_vencida",
+      "observado": 2,
+      "esperado": 2,
+      "confere": true
+    },
+    {
+      "nome": "worker_antigo_nao_conclui",
+      "observado": false,
+      "esperado": false,
+      "confere": true
+    },
+    {
+      "nome": "worker_atual_conclui",
+      "observado": true,
+      "esperado": true,
+      "confere": true
+    },
+    {
+      "nome": "concluido_nao_reabre",
+      "observado": null,
+      "esperado": null,
+      "confere": true
+    },
+    {
+      "nome": "posse_nao_deduplica_destino",
+      "observado": {
+        "despachos": 2,
+        "efeitos": 1
+      },
+      "esperado": {
+        "despachos": 2,
+        "efeitos": 1
+      },
+      "confere": true
+    },
+    {
+      "nome": "compensacao_novo_efeito",
+      "observado": [
+        "op-001:compensar",
+        "aberto",
+        2
+      ],
+      "esperado": [
+        "op-001:compensar",
+        "aberto",
+        2
+      ],
+      "confere": true
+    },
+    {
+      "nome": "compensacao_revisionada",
+      "observado": [
+        true,
+        2
+      ],
+      "esperado": [
+        true,
+        2
+      ],
+      "confere": true
+    }
+  ],
+  "evidencias": {},
+  "escopo": "SQLite local e falhas controladas; sem serviços externos"
+}
