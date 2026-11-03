@@ -1,0 +1,165 @@
+{
+  "capitulo": 4,
+  "origem": 4,
+  "segundos": 0.093,
+  "observacao": {
+    "casos": [
+      {
+        "caso": "manual_atrasado",
+        "observado": [
+          "D-10",
+          "D-20"
+        ],
+        "esperado": [
+          "D-10",
+          "D-20"
+        ],
+        "confere": true,
+        "eventos": [
+          {
+            "fonte": "manual",
+            "evento": "inicio"
+          },
+          {
+            "fonte": "status",
+            "evento": "inicio"
+          },
+          {
+            "fonte": "status",
+            "evento": "fim"
+          },
+          {
+            "fonte": "manual",
+            "evento": "fim"
+          }
+        ],
+        "ordem_agregada": [
+          "D-10",
+          "D-20"
+        ]
+      },
+      {
+        "caso": "status_atrasado",
+        "observado": [
+          "D-10",
+          "D-20"
+        ],
+        "esperado": [
+          "D-10",
+          "D-20"
+        ],
+        "confere": true,
+        "eventos": [
+          {
+            "fonte": "manual",
+            "evento": "inicio"
+          },
+          {
+            "fonte": "status",
+            "evento": "inicio"
+          },
+          {
+            "fonte": "manual",
+            "evento": "fim"
+          },
+          {
+            "fonte": "status",
+            "evento": "fim"
+          }
+        ],
+        "ordem_agregada": [
+          "D-10",
+          "D-20"
+        ]
+      },
+      {
+        "caso": "sem_reducer",
+        "observado": "InvalidUpdateError",
+        "esperado": "InvalidUpdateError",
+        "confere": true,
+        "eventos": [
+          {
+            "fonte": "manual",
+            "evento": "inicio"
+          },
+          {
+            "fonte": "status",
+            "evento": "inicio"
+          },
+          {
+            "fonte": "status",
+            "evento": "fim"
+          },
+          {
+            "fonte": "manual",
+            "evento": "fim"
+          }
+        ]
+      },
+      {
+        "caso": "lote_repetido",
+        "observado": {
+          "chamadas": 3,
+          "documentos": 2
+        },
+        "esperado": {
+          "chamadas": 3,
+          "documentos": 2
+        },
+        "confere": true
+      },
+      {
+        "caso": "lote_vazio",
+        "observado": [
+          0,
+          0
+        ],
+        "esperado": [
+          0,
+          0
+        ],
+        "confere": true
+      },
+      {
+        "caso": "revisao_conflitante",
+        "observado": "mesma revisao com conteudos diferentes",
+        "esperado": "mesma revisao com conteudos diferentes",
+        "confere": true
+      },
+      {
+        "caso": "juncao_True",
+        "observado": [
+          2
+        ],
+        "esperado": [
+          2
+        ],
+        "confere": true
+      },
+      {
+        "caso": "juncao_False",
+        "observado": [
+          1,
+          2
+        ],
+        "esperado": [
+          1,
+          2
+        ],
+        "confere": true
+      },
+      {
+        "caso": "concat_vazia",
+        "observado": [
+          1,
+          2
+        ],
+        "esperado": [
+          1,
+          2
+        ],
+        "confere": true
+      }
+    ]
+  }
+}

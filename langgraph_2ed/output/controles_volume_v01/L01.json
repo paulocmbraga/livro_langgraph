@@ -1,0 +1,187 @@
+{
+  "capitulo": 1,
+  "origem": 1,
+  "segundos": 2.328,
+  "observacao": {
+    "casos": [
+      {
+        "caso": "usuarios_0",
+        "observado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P3",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P3",
+            "fila": "suporte"
+          }
+        },
+        "esperado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P3",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P3",
+            "fila": "suporte"
+          }
+        },
+        "confere": true
+      },
+      {
+        "caso": "usuarios_1",
+        "observado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P2",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P2",
+            "fila": "suporte"
+          }
+        },
+        "esperado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P2",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P2",
+            "fila": "suporte"
+          }
+        },
+        "confere": true
+      },
+      {
+        "caso": "usuarios_49",
+        "observado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P2",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P2",
+            "fila": "suporte"
+          }
+        },
+        "esperado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P2",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P2",
+            "fila": "suporte"
+          }
+        },
+        "confere": true
+      },
+      {
+        "caso": "usuarios_50",
+        "observado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P1",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P1",
+            "fila": "suporte"
+          }
+        },
+        "esperado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P1",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P1",
+            "fila": "suporte"
+          }
+        },
+        "confere": true
+      },
+      {
+        "caso": "usuarios_80",
+        "observado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P1",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P1",
+            "fila": "suporte"
+          }
+        },
+        "esperado": {
+          "funcao": {
+            "id": "A-17",
+            "prioridade": "P1",
+            "fila": "suporte"
+          },
+          "grafo": {
+            "id": "A-17",
+            "prioridade": "P1",
+            "fila": "suporte"
+          }
+        },
+        "confere": true
+      },
+      {
+        "caso": "orientacao",
+        "observado": "conhecimento",
+        "esperado": "conhecimento",
+        "confere": true
+      },
+      {
+        "caso": "mudanca",
+        "observado": "planejamento",
+        "esperado": "planejamento",
+        "confere": true
+      },
+      {
+        "caso": "caminho",
+        "observado": [
+          "avaliar",
+          "encaminhar"
+        ],
+        "esperado": [
+          "avaliar",
+          "encaminhar"
+        ],
+        "confere": true
+      },
+      {
+        "caso": "fronteira_50_detecta_maior_estrito",
+        "observado": {
+          "obtido": "P2",
+          "gabarito": "P1",
+          "defeito_detectado": true
+        },
+        "esperado": {
+          "obtido": "P2",
+          "gabarito": "P1",
+          "defeito_detectado": true
+        },
+        "confere": true
+      }
+    ]
+  }
+}

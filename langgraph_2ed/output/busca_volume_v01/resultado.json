@@ -1,0 +1,169 @@
+{
+  "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "sentence_transformers": "5.1.1",
+  "torch": "2.8.0+cpu",
+  "dimensoes": 384,
+  "documentos": [
+    [
+      "D1",
+      "Norte",
+      2,
+      "Para recuperar a senha, use o portal de identidade."
+    ],
+    [
+      "D2",
+      "Norte",
+      2,
+      "Para corrigir falhas da rede privada, reinstale o cliente VPN."
+    ],
+    [
+      "D3",
+      "Sul",
+      2,
+      "Para restaurar a senha, use o código reservado do Sul."
+    ],
+    [
+      "D4",
+      "Norte",
+      1,
+      "Senha temporária distribuída por telefone."
+    ],
+    [
+      "D5",
+      "Norte",
+      2,
+      "Para ajustar o turno da noite, contate a escala."
+    ]
+  ],
+  "linhas": [
+    {
+      "pergunta": "Como restaurar minha credencial?",
+      "metodo": "lexical",
+      "ouro": "D1",
+      "ranking": [
+        "D1",
+        "D2",
+        "D5"
+      ],
+      "escores": [
+        0,
+        0,
+        0
+      ],
+      "hit1": true
+    },
+    {
+      "pergunta": "Como restaurar minha credencial?",
+      "metodo": "densa",
+      "ouro": "D1",
+      "ranking": [
+        "D1",
+        "D2",
+        "D5"
+      ],
+      "escores": [
+        0.39181,
+        0.2873,
+        -0.04945
+      ],
+      "hit1": true
+    },
+    {
+      "pergunta": "Como corrijo a conexão remota?",
+      "metodo": "lexical",
+      "ouro": "D2",
+      "ranking": [
+        "D1",
+        "D5",
+        "D2"
+      ],
+      "escores": [
+        1,
+        1,
+        0
+      ],
+      "hit1": false
+    },
+    {
+      "pergunta": "Como corrijo a conexão remota?",
+      "metodo": "densa",
+      "ouro": "D2",
+      "ranking": [
+        "D2",
+        "D1",
+        "D5"
+      ],
+      "escores": [
+        0.41994,
+        0.24466,
+        0.0212
+      ],
+      "hit1": true
+    },
+    {
+      "pergunta": "Posso alterar meu horário?",
+      "metodo": "lexical",
+      "ouro": "D5",
+      "ranking": [
+        "D1",
+        "D2",
+        "D5"
+      ],
+      "escores": [
+        0,
+        0,
+        0
+      ],
+      "hit1": false
+    },
+    {
+      "pergunta": "Posso alterar meu horário?",
+      "metodo": "densa",
+      "ouro": "D5",
+      "ranking": [
+        "D5",
+        "D2",
+        "D1"
+      ],
+      "escores": [
+        0.32432,
+        0.06094,
+        -0.07175
+      ],
+      "hit1": true
+    },
+    {
+      "pergunta": "Preciso reinstalar o cliente VPN",
+      "metodo": "lexical",
+      "ouro": "D2",
+      "ranking": [
+        "D2",
+        "D1",
+        "D5"
+      ],
+      "escores": [
+        3,
+        1,
+        1
+      ],
+      "hit1": true
+    },
+    {
+      "pergunta": "Preciso reinstalar o cliente VPN",
+      "metodo": "densa",
+      "ouro": "D2",
+      "ranking": [
+        "D2",
+        "D1",
+        "D5"
+      ],
+      "escores": [
+        0.88541,
+        0.34385,
+        -0.05714
+      ],
+      "hit1": true
+    }
+  ]
+}

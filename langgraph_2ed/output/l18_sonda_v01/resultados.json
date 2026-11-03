@@ -1,0 +1,29 @@
+{
+  "completo": true,
+  "grupos": {
+    "original/False": {
+      "n": 12,
+      "codigos_da_referencia": 3,
+      "negativas": 12
+    },
+    "original/True": {
+      "n": 12,
+      "codigos_da_referencia": 8,
+      "negativas": 2
+    },
+    "neutra/False": {
+      "n": 12,
+      "codigos_da_referencia": 0,
+      "negativas": 0
+    },
+    "neutra/True": {
+      "n": 12,
+      "codigos_da_referencia": 6,
+      "negativas": 1
+    }
+  },
+  "hashes": {
+    "chamadas.jsonl": "6d2e89299d4f56c92f6985b1f7a6601f945e6cdbd55746eeecd4e970a79a8462",
+    "protocolo.json": "db9f7bd6a5fd0a80e8bf4b741a2bd4a0bf23b5a127e913f022db55345eddf2fe"
+  }
+}

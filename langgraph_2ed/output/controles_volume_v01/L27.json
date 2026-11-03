@@ -1,0 +1,179 @@
+{
+  "capitulo": 27,
+  "origem": 22,
+  "segundos": 5.312,
+  "observacao": {
+    "capitulo": 22,
+    "casos": [
+      {
+        "nome": "reinicio_conserva_revisao",
+        "observado": [
+          "revisao",
+          true
+        ],
+        "esperado": [
+          "revisao",
+          true
+        ],
+        "confere": true
+      },
+      {
+        "nome": "retomada_apos_reinicio",
+        "observado": "concluida",
+        "esperado": "concluida",
+        "confere": true
+      },
+      {
+        "nome": "backup_quatro_bancos",
+        "observado": 4,
+        "esperado": 4,
+        "confere": true
+      },
+      {
+        "nome": "restauracao_isolada",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "copia_conserva_pendencia",
+        "observado": "revisao",
+        "esperado": "revisao",
+        "confere": true
+      },
+      {
+        "nome": "copia_retoma_grafo",
+        "observado": "concluida",
+        "esperado": "concluida",
+        "confere": true
+      },
+      {
+        "nome": "carga_cardinalidade",
+        "observado": [
+          12,
+          12,
+          0
+        ],
+        "esperado": [
+          12,
+          12,
+          0
+        ],
+        "confere": true
+      },
+      {
+        "nome": "medidas_observadas_finitas",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "backpressure_sem_nova_intencao",
+        "observado": [
+          429,
+          200
+        ],
+        "esperado": [
+          429,
+          200
+        ],
+        "confere": true
+      },
+      {
+        "nome": "backup_recusa_servico_ativo",
+        "observado": "diretorio_em_uso",
+        "esperado": "diretorio_em_uso",
+        "confere": true
+      },
+      {
+        "nome": "versao_antiga_bloqueada",
+        "observado": "bloqueada",
+        "esperado": "bloqueada",
+        "confere": true
+      },
+      {
+        "nome": "copia_alterada_recusada",
+        "observado": "backup_alterado",
+        "esperado": "backup_alterado",
+        "confere": true
+      }
+    ],
+    "carga": {
+      "oferecidas": 12,
+      "concorrencia_clientes": 3,
+      "concluidas": 12,
+      "rejeitadas": 0,
+      "duracao_s": 0.6347306,
+      "vazao_por_s": 18.905658558134743,
+      "p95_concluidas_ms": 271.4108,
+      "metodo_percentil": "posto_mais_proximo",
+      "observacoes": [
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 112.7767
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 144.5336
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 185.1223
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 202.2274
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 121.1619
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 271.4108
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 118.0103
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 193.1171
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 145.6365
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 129.8081
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 122.5492
+        },
+        {
+          "aceita": true,
+          "status": "concluida",
+          "latencia_ms": 104.2666
+        }
+      ],
+      "protocolo": "HTTP loopback, um worker, clientes fechados, sem aquecimento"
+    },
+    "postgres": {
+      "executado": false,
+      "motivo": "adaptador ausente e daemon Docker indisponível na entrega"
+    }
+  }
+}

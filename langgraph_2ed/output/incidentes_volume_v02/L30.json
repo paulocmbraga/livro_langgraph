@@ -1,0 +1,15 @@
+{
+  "antes": "desconhecida",
+  "apos_revogacao": {
+    "pode_escrever": false
+  },
+  "historica": {
+    "fase": "confirmada",
+    "recibo": "rc-f5508dda475f0f5dde6e172a"
+  },
+  "nova": {
+    "fase": "negada"
+  },
+  "efeitos_antigos": 1,
+  "efeitos_novos": 0
+}

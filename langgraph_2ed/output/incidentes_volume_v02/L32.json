@@ -1,0 +1,13 @@
+{
+  "restauros": {
+    "regressao": [
+      60
+    ],
+    "v1": [
+      30
+    ]
+  },
+  "origem": "pausada",
+  "efeitos_na_origem": [],
+  "decisao": "rejeitar regressão; manter v1"
+}

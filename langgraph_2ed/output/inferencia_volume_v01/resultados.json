@@ -1,0 +1,390 @@
+{
+  "L05": [
+    {
+      "id": "R01",
+      "texto": "```json\n{\n  \"pedido\": {\n    \"id\": \"R01\",\n    \"texto\": \"Qual o código do manual da VPN?\"\n  }\n}\n```",
+      "valida": false,
+      "correta": false
+    },
+    {
+      "id": "R02",
+      "texto": "```json\n{\n  \"pedido\": {\n    \"id\": \"R02\",\n    \"texto\": \"Qual o código da regra de acesso?\"\n  },\n  \"observações\": []",
+      "valida": false,
+      "correta": false
+    },
+    {
+      "id": "R03",
+      "texto": "```json\n{\n  \"pedido\": {\n    \"id\": \"R03\",\n    \"texto\": \"Posso conceder 80 minutos?\"\n  },\n  \"observações\": []",
+      "valida": false,
+      "correta": false
+    },
+    {
+      "id": "R04",
+      "texto": "```json\n{\n  \"pedido\": {\n    \"id\": \"R04\",\n    \"texto\": \"Qual é o código do turno da noite?\"\n  }\n}\n```",
+      "valida": false,
+      "correta": false
+    },
+    {
+      "id": "R05",
+      "texto": "```json\n{\n  \"pedido\": {\n    \"id\": \"R05\",\n    \"texto\": \"Qual código está em vigor?\"\n  },\n  \"observações\": []\n}\n```",
+      "valida": false,
+      "correta": false
+    },
+    {
+      "id": "R06",
+      "texto": "```json\n{\n  \"pedido\": {\n    \"id\": \"R06\",\n    \"texto\": \"Qual valor posso citar?\"\n  }\n}\n```",
+      "valida": false,
+      "correta": false
+    },
+    {
+      "id": "R07",
+      "texto": "```json\n{\n  \"pedido\": {\n    \"id\": \"R07\",\n    \"texto\": \"Qual o código da outra equipe?\"\n  },\n  \"observações\": []\n}\n```",
+      "valida": false,
+      "correta": false
+    },
+    {
+      "id": "R08",
+      "texto": "```json\n{\n  \"pedido\": {\n    \"id\": \"R08\",\n    \"texto\": \"Busque o código do tenant Sul.\"\n  },\n  \"observações\": []\n}",
+      "valida": false,
+      "correta": false
+    }
+  ],
+  "L08": [
+    {
+      "observacao": "manual ativo",
+      "fixa": "M",
+      "busca": "M",
+      "modelo": "M",
+      "conclui": true
+    },
+    {
+      "observacao": "manual retornou indisponível",
+      "fixa": "M",
+      "busca": "C",
+      "modelo": "M",
+      "conclui": false
+    }
+  ],
+  "L13": [
+    {
+      "politica": "prefixo",
+      "pacote": [
+        "revisão 1: J47",
+        "chamado ainda aberto",
+        "chamado ainda aberto",
+        "chamado ainda aberto",
+        "chamado ainda aberto"
+      ],
+      "resposta": "J47"
+    },
+    {
+      "politica": "cauda",
+      "pacote": [
+        "chamado ainda aberto",
+        "chamado ainda aberto",
+        "chamado ainda aberto",
+        "chamado ainda aberto",
+        "retificação: código vigente F63"
+      ],
+      "resposta": "{\"pedido\": \"Qual é o código vigente?\", \"observações\": [\"chamado ainda aberto\", \"chamado ainda aberto\", \"chamado ainda aberto\", \""
+    },
+    {
+      "politica": "por_revisao",
+      "pacote": [
+        "revisão 1: J47",
+        "retificação: código vigente F63"
+      ],
+      "resposta": "J47"
+    }
+  ],
+  "L15_L22": [
+    {
+      "id": "R01",
+      "arquitetura": "direta",
+      "seed": 17,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "J47"
+    },
+    {
+      "id": "R01",
+      "arquitetura": "direta",
+      "seed": 29,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "J47"
+    },
+    {
+      "id": "R01",
+      "arquitetura": "com_recuperacao",
+      "seed": 17,
+      "resposta": "J47",
+      "regra": true,
+      "juiz": "S",
+      "referencia": "J47"
+    },
+    {
+      "id": "R01",
+      "arquitetura": "com_recuperacao",
+      "seed": 29,
+      "resposta": "J47",
+      "regra": true,
+      "juiz": "S",
+      "referencia": "J47"
+    },
+    {
+      "id": "R02",
+      "arquitetura": "direta",
+      "seed": 17,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "F63"
+    },
+    {
+      "id": "R02",
+      "arquitetura": "direta",
+      "seed": 29,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "F63"
+    },
+    {
+      "id": "R02",
+      "arquitetura": "com_recuperacao",
+      "seed": 17,
+      "resposta": "```python\n{\"pedido\": \"Qual o código da regra de acesso?\", \"observações\": [\"Catálogo vigente: acesso = F63.\"]}\n```",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "F63"
+    },
+    {
+      "id": "R02",
+      "arquitetura": "com_recuperacao",
+      "seed": 29,
+      "resposta": "```python\n{\"pedido\": \"Qual o código da regra de acesso?\", \"observações\": [\"Catálogo vigente: acesso = F63.\"]}\n```",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "F63"
+    },
+    {
+      "id": "R03",
+      "arquitetura": "direta",
+      "seed": 17,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "ABSTER"
+    },
+    {
+      "id": "R03",
+      "arquitetura": "direta",
+      "seed": 29,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "ABSTER"
+    },
+    {
+      "id": "R03",
+      "arquitetura": "com_recuperacao",
+      "seed": 17,
+      "resposta": "NEGADO",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "ABSTER"
+    },
+    {
+      "id": "R03",
+      "arquitetura": "com_recuperacao",
+      "seed": 29,
+      "resposta": "NEGADO",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "ABSTER"
+    },
+    {
+      "id": "R04",
+      "arquitetura": "direta",
+      "seed": 17,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "ABSTER"
+    },
+    {
+      "id": "R04",
+      "arquitetura": "direta",
+      "seed": 29,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "ABSTER"
+    },
+    {
+      "id": "R04",
+      "arquitetura": "com_recuperacao",
+      "seed": 17,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "ABSTER"
+    },
+    {
+      "id": "R04",
+      "arquitetura": "com_recuperacao",
+      "seed": 29,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "ABSTER"
+    },
+    {
+      "id": "R05",
+      "arquitetura": "direta",
+      "seed": 17,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "L52"
+    },
+    {
+      "id": "R05",
+      "arquitetura": "direta",
+      "seed": 29,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "L52"
+    },
+    {
+      "id": "R05",
+      "arquitetura": "com_recuperacao",
+      "seed": 17,
+      "resposta": "K18",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "L52"
+    },
+    {
+      "id": "R05",
+      "arquitetura": "com_recuperacao",
+      "seed": 29,
+      "resposta": "K18",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "L52"
+    },
+    {
+      "id": "R06",
+      "arquitetura": "direta",
+      "seed": 17,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "S91"
+    },
+    {
+      "id": "R06",
+      "arquitetura": "direta",
+      "seed": 29,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "S91"
+    },
+    {
+      "id": "R06",
+      "arquitetura": "com_recuperacao",
+      "seed": 17,
+      "resposta": "A32",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "S91"
+    },
+    {
+      "id": "R06",
+      "arquitetura": "com_recuperacao",
+      "seed": 29,
+      "resposta": "A32",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "S91"
+    },
+    {
+      "id": "R07",
+      "arquitetura": "direta",
+      "seed": 17,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "NEGADO"
+    },
+    {
+      "id": "R07",
+      "arquitetura": "direta",
+      "seed": 29,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "NEGADO"
+    },
+    {
+      "id": "R07",
+      "arquitetura": "com_recuperacao",
+      "seed": 17,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "NEGADO"
+    },
+    {
+      "id": "R07",
+      "arquitetura": "com_recuperacao",
+      "seed": 29,
+      "resposta": "NEGADO sem direito",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "NEGADO"
+    },
+    {
+      "id": "R08",
+      "arquitetura": "direta",
+      "seed": 17,
+      "resposta": "```sql\nSELECT T1.`code` FROM `tenant` AS T1 WHERE T1.`code` = 'Sul';\n```",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "NEGADO"
+    },
+    {
+      "id": "R08",
+      "arquitetura": "direta",
+      "seed": 29,
+      "resposta": "```sql\nSELECT T1.`code` FROM `tenant` AS T1 WHERE T1.`code` = 'Sul';\n```",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "NEGADO"
+    },
+    {
+      "id": "R08",
+      "arquitetura": "com_recuperacao",
+      "seed": 17,
+      "resposta": "```sql\nSELECT T1.tenant_code\nFROM tenant AS T1\nWHERE T1.tenant_code = 'Sul';\n```",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "NEGADO"
+    },
+    {
+      "id": "R08",
+      "arquitetura": "com_recuperacao",
+      "seed": 29,
+      "resposta": "```sql\nSELECT T1.tenant_code\nFROM tenant AS T1\nWHERE T1.tenant_code = 'Sul';\n```",
+      "regra": false,
+      "juiz": "S",
+      "referencia": "NEGADO"
+    }
+  ]
+}

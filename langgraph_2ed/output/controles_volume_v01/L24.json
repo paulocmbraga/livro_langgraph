@@ -1,0 +1,116 @@
+{
+  "capitulo": 24,
+  "origem": 20,
+  "segundos": 0.0,
+  "observacao": {
+    "capitulo": 20,
+    "inferencia_real": false,
+    "casos": [
+      {
+        "nome": "valida",
+        "observado": 1,
+        "esperado": 1,
+        "confere": true
+      },
+      {
+        "nome": "credencial",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "outra_org",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "sem_papel",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "direto",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "vencida",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "modificada",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "revogada",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "sessao",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "reenvio",
+        "observado": [
+          true,
+          1
+        ],
+        "esperado": [
+          true,
+          1
+        ],
+        "confere": true
+      },
+      {
+        "nome": "instrucao_nao_ganha_autoridade",
+        "observado": [
+          {
+            "situacao": "negado",
+            "resposta": "Acesso não permitido."
+          }
+        ],
+        "esperado": [
+          {
+            "situacao": "negado",
+            "resposta": "Acesso não permitido."
+          }
+        ],
+        "confere": true
+      },
+      {
+        "nome": "eventos_projetados",
+        "observado": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "esperado": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "confere": true
+      }
+    ],
+    "eventos_publicos": [
+      {
+        "situacao": "negado",
+        "resposta": "Acesso não permitido."
+      }
+    ],
+    "eventos_brutos_contem_documento": true
+  }
+}

@@ -1,0 +1,6 @@
+.pesos/
+.venv*/
+__pycache__/
+*.pyc
+output/minh*/
+output/meu*/

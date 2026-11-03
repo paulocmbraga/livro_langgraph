@@ -1,0 +1,12 @@
+{
+  "aurora": {
+    "resposta": "Instale Aurora Connect.",
+    "fonte": "VPN-r2",
+    "situacao": "resposta"
+  },
+  "outra": {
+    "resposta": "",
+    "fonte": null,
+    "situacao": "insuficiente"
+  }
+}

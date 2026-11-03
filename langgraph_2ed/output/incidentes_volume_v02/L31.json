@@ -1,0 +1,34 @@
+{
+  "ferramenta": {
+    "recurso": "A-17",
+    "status": "aberto",
+    "revisao": 1
+  },
+  "mensagem": "assoc-1",
+  "tarefa": "2bdd52c1-92a5-4b1f-9064-207abc96f366",
+  "contexto": "073f3776-f1c7-4d47-a3b9-3481f2fe48cc",
+  "revisao_esperada": 1,
+  "mutante": {
+    "artifactId": "anterior",
+    "parts": [
+      {
+        "text": "rc-55b4c4d4c09c1ce93aa5a406"
+      }
+    ],
+    "metadata": {
+      "geracao": 0
+    }
+  },
+  "publicado": {
+    "artifactId": "2bdd52c1-92a5-4b1f-9064-207abc96f366-v1",
+    "parts": [
+      {
+        "text": "rc-55b4c4d4c09c1ce93aa5a406"
+      }
+    ],
+    "metadata": {
+      "geracao": 1
+    }
+  },
+  "efeitos": 1
+}

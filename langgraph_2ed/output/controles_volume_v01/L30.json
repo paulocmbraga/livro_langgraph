@@ -1,0 +1,156 @@
+{
+  "capitulo": 30,
+  "origem": 24,
+  "segundos": 13.875,
+  "observacao": {
+    "capitulo": 24,
+    "casos": [
+      {
+        "nome": "efeito_confirmado",
+        "observado": [
+          "concluida",
+          1
+        ],
+        "esperado": [
+          "concluida",
+          1
+        ],
+        "confere": true
+      },
+      {
+        "nome": "repeticao_mesma_operacao",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "rejeicao_sem_novo_efeito",
+        "observado": [
+          "rejeitada",
+          1
+        ],
+        "esperado": [
+          "rejeitada",
+          1
+        ],
+        "confere": true
+      },
+      {
+        "nome": "concorrencia_no_destino",
+        "observado": [
+          true,
+          1
+        ],
+        "esperado": [
+          true,
+          1
+        ],
+        "confere": true
+      },
+      {
+        "nome": "recusa_conteudo",
+        "observado": [
+          true,
+          0
+        ],
+        "esperado": [
+          true,
+          0
+        ],
+        "confere": true
+      },
+      {
+        "nome": "recusa_vencida",
+        "observado": [
+          true,
+          0
+        ],
+        "esperado": [
+          true,
+          0
+        ],
+        "confere": true
+      },
+      {
+        "nome": "recusa_revogada",
+        "observado": [
+          true,
+          0
+        ],
+        "esperado": [
+          true,
+          0
+        ],
+        "confere": true
+      },
+      {
+        "nome": "recusa_papel",
+        "observado": [
+          true,
+          0
+        ],
+        "esperado": [
+          true,
+          0
+        ],
+        "confere": true
+      },
+      {
+        "nome": "confirmacao_ausente_encaminhada",
+        "observado": [
+          "desconhecida",
+          1,
+          "desconhecida"
+        ],
+        "esperado": [
+          "desconhecida",
+          1,
+          "desconhecida"
+        ],
+        "confere": true
+      },
+      {
+        "nome": "conciliar_sem_reaplicar",
+        "observado": [
+          "concluida",
+          1
+        ],
+        "esperado": [
+          "concluida",
+          1
+        ],
+        "confere": true
+      },
+      {
+        "nome": "historico_preserva_incerteza",
+        "observado": [
+          true,
+          "concluida"
+        ],
+        "esperado": [
+          true,
+          "concluida"
+        ],
+        "confere": true
+      },
+      {
+        "nome": "reinicio_apos_commit",
+        "observado": {
+          "retorno": 24,
+          "status_antes": "executando",
+          "efeitos_antes": 1,
+          "status_final": "concluida",
+          "efeitos_depois": 1
+        },
+        "esperado": {
+          "retorno": 24,
+          "status_antes": "executando",
+          "efeitos_antes": 1,
+          "status_final": "concluida",
+          "efeitos_depois": 1
+        },
+        "confere": true
+      }
+    ]
+  }
+}

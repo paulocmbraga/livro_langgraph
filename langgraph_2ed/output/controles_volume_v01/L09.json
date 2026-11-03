@@ -1,0 +1,212 @@
+{
+  "capitulo": 9,
+  "origem": 9,
+  "segundos": 15.047,
+  "observacao": {
+    "capitulo": 9,
+    "casos": [
+      {
+        "nome": "mesmo_saver",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "novo_saver_perde_estado",
+        "observado": false,
+        "esperado": false,
+        "confere": true
+      },
+      {
+        "nome": "outro_thread",
+        "observado": false,
+        "esperado": false,
+        "confere": true
+      },
+      {
+        "nome": "historico_identificado",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "inspecao_sem_executar",
+        "observado": {
+          "revisoes": 0,
+          "despachos": 0,
+          "consultas": 1,
+          "efeitos": 0
+        },
+        "esperado": {
+          "revisoes": 0,
+          "despachos": 0,
+          "consultas": 1,
+          "efeitos": 0
+        },
+        "confere": true
+      },
+      {
+        "nome": "replay_reexecuta_leitura",
+        "observado": 2,
+        "esperado": 2,
+        "confere": true
+      },
+      {
+        "nome": "ramo_nao_desfaz_destino",
+        "observado": [
+          "simulado",
+          "em_analise",
+          1
+        ],
+        "esperado": [
+          "simulado",
+          "em_analise",
+          1
+        ],
+        "confere": true
+      },
+      {
+        "nome": "snapshot_anterior_preservado",
+        "observado": "aberto",
+        "esperado": "aberto",
+        "confere": true
+      },
+      {
+        "nome": "sqlite_outro_processo",
+        "observado": [
+          true,
+          true,
+          [
+            "resumir"
+          ],
+          []
+        ],
+        "esperado": [
+          true,
+          true,
+          [
+            "resumir"
+          ],
+          []
+        ],
+        "confere": true
+      },
+      {
+        "nome": "memoria_outro_processo",
+        "observado": [
+          true,
+          false
+        ],
+        "esperado": [
+          true,
+          false
+        ],
+        "confere": true
+      },
+      {
+        "nome": "modo_sync",
+        "observado": "aberto",
+        "esperado": "aberto",
+        "confere": true
+      },
+      {
+        "nome": "modo_async",
+        "observado": "aberto",
+        "esperado": "aberto",
+        "confere": true
+      },
+      {
+        "nome": "modo_exit",
+        "observado": "aberto",
+        "esperado": "aberto",
+        "confere": true
+      }
+    ],
+    "evidencias": {
+      "processos_sqlite": [
+        {
+          "pid": 21836,
+          "existe": true,
+          "valores": {
+            "chamado_id": "A-17",
+            "observacao": {
+              "org": "aurora",
+              "id": "A-17",
+              "status": "aberto",
+              "revisao": 3
+            }
+          },
+          "proximos": [
+            "resumir"
+          ],
+          "checkpoint_id": "1f1d7452-4188-63c1-8001-cb5302389fa3",
+          "origem": "loop"
+        },
+        {
+          "pid": 14596,
+          "existe": true,
+          "valores": {
+            "chamado_id": "A-17",
+            "observacao": {
+              "org": "aurora",
+              "id": "A-17",
+              "status": "aberto",
+              "revisao": 3
+            }
+          },
+          "proximos": [
+            "resumir"
+          ],
+          "checkpoint_id": "1f1d7452-4188-63c1-8001-cb5302389fa3",
+          "origem": "loop"
+        },
+        {
+          "pid": 8880,
+          "existe": true,
+          "valores": {
+            "chamado_id": "A-17",
+            "observacao": {
+              "org": "aurora",
+              "id": "A-17",
+              "status": "aberto",
+              "revisao": 3
+            },
+            "resumo": "A-17: aberto, revisão 3"
+          },
+          "proximos": [],
+          "checkpoint_id": "1f1d7452-71d7-6b12-8002-db0bf8398fdd",
+          "origem": "loop"
+        }
+      ],
+      "processos_memoria": [
+        {
+          "pid": 4276,
+          "existe": true,
+          "valores": {
+            "chamado_id": "A-17",
+            "observacao": {
+              "org": "aurora",
+              "id": "A-17",
+              "status": "aberto",
+              "revisao": 3
+            }
+          },
+          "proximos": [
+            "resumir"
+          ],
+          "checkpoint_id": "1f1d7452-881c-64f8-8001-fb8426c848a3",
+          "origem": "loop"
+        },
+        {
+          "pid": 18140,
+          "existe": false,
+          "valores": {},
+          "proximos": [],
+          "checkpoint_id": null,
+          "origem": null
+        }
+      ]
+    },
+    "escopo": "SQLite local e falhas controladas; sem serviços externos"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "versao": "2025-11-25",
+  "catalogo": "consultar_chamado",
+  "permitida": {
+    "structuredContent": {
+      "recurso": "A-17",
+      "status": "aberto",
+      "revisao": 1
+    },
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"recurso\": \"A-17\", \"status\": \"aberto\", \"revisao\": 1}"
+      }
+    ]
+  },
+  "revogacao_recusada": true,
+  "catalogo_obsoleto_recusado": true,
+  "credencial_invalida": 401
+}

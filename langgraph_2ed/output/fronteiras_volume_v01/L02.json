@@ -1,0 +1,18 @@
+{
+  "final": {
+    "resultado": "ok"
+  },
+  "evento_bruto": [
+    {
+      "analisar": {
+        "reservado": "MARCADOR-INTERNO",
+        "resultado": "ok"
+      }
+    }
+  ],
+  "projecao": [
+    {
+      "resultado": "ok"
+    }
+  ]
+}

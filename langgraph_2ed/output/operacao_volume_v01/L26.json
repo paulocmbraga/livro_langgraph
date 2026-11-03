@@ -1,0 +1,35 @@
+[
+  {
+    "atraso_em": "fila",
+    "fases_ms": {
+      "fila": 40.524,
+      "recuperacao": 2.088,
+      "geracao": 2.552
+    },
+    "parede_ms": 45.197,
+    "tokens": null,
+    "perfil": "atraso injetado, sem inferência"
+  },
+  {
+    "atraso_em": "recuperacao",
+    "fases_ms": {
+      "fila": 2.538,
+      "recuperacao": 40.383,
+      "geracao": 2.094
+    },
+    "parede_ms": 45.038,
+    "tokens": null,
+    "perfil": "atraso injetado, sem inferência"
+  },
+  {
+    "atraso_em": "geracao",
+    "fases_ms": {
+      "fila": 2.089,
+      "recuperacao": 2.514,
+      "geracao": 40.257
+    },
+    "parede_ms": 44.892,
+    "tokens": null,
+    "perfil": "atraso injetado, sem inferência"
+  }
+]

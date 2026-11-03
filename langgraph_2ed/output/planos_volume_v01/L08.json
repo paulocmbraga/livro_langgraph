@@ -1,0 +1,122 @@
+[
+  {
+    "politica": "fixa",
+    "manual_disponivel": true,
+    "final": {
+      "objetivo": "localizar o código da VPN",
+      "passos": [
+        "M: chegou J47"
+      ],
+      "proximo": "fim",
+      "fontes": [
+        "J47"
+      ],
+      "desfecho": "resolvida"
+    },
+    "chamadas": []
+  },
+  {
+    "politica": "busca",
+    "manual_disponivel": true,
+    "final": {
+      "objetivo": "localizar o código da VPN",
+      "passos": [
+        "M: chegou J47"
+      ],
+      "proximo": "fim",
+      "fontes": [
+        "J47"
+      ],
+      "desfecho": "resolvida"
+    },
+    "chamadas": []
+  },
+  {
+    "politica": "modelo",
+    "manual_disponivel": true,
+    "final": {
+      "objetivo": "localizar o código da VPN",
+      "passos": [
+        "C: chegou J47"
+      ],
+      "proximo": "fim",
+      "fontes": [
+        "J47"
+      ],
+      "desfecho": "resolvida"
+    },
+    "chamadas": [
+      {
+        "papel": "planejador",
+        "seed": 17,
+        "entrada": 63,
+        "saida": 2,
+        "prompt": "<|im_start|>system\nM = manual, C = catálogo, X = abandonar. Prefira o manual. Se falhar, tente o catálogo alternativo.<|im_end|>\n<|im_start|>user\n{\"pedido\": \"localizar o código da VPN\", \"observações\": []}<|im_end|>\n<|im_start|>assistant\n",
+        "opcoes": "MCX",
+        "texto": "C",
+        "stop": "eos",
+        "ms": 422.0
+      }
+    ]
+  },
+  {
+    "politica": "fixa",
+    "manual_disponivel": false,
+    "final": {
+      "objetivo": "localizar o código da VPN",
+      "passos": [
+        "M: indisponível",
+        "M: indisponível"
+      ],
+      "proximo": "fim",
+      "fontes": [],
+      "desfecho": "orcamento"
+    },
+    "chamadas": []
+  },
+  {
+    "politica": "busca",
+    "manual_disponivel": false,
+    "final": {
+      "objetivo": "localizar o código da VPN",
+      "passos": [
+        "M: indisponível",
+        "C: chegou J47"
+      ],
+      "proximo": "fim",
+      "fontes": [
+        "J47"
+      ],
+      "desfecho": "resolvida"
+    },
+    "chamadas": []
+  },
+  {
+    "politica": "modelo",
+    "manual_disponivel": false,
+    "final": {
+      "objetivo": "localizar o código da VPN",
+      "passos": [
+        "C: chegou J47"
+      ],
+      "proximo": "fim",
+      "fontes": [
+        "J47"
+      ],
+      "desfecho": "resolvida"
+    },
+    "chamadas": [
+      {
+        "papel": "planejador",
+        "seed": 17,
+        "entrada": 63,
+        "saida": 2,
+        "prompt": "<|im_start|>system\nM = manual, C = catálogo, X = abandonar. Prefira o manual. Se falhar, tente o catálogo alternativo.<|im_end|>\n<|im_start|>user\n{\"pedido\": \"localizar o código da VPN\", \"observações\": []}<|im_end|>\n<|im_start|>assistant\n",
+        "opcoes": "MCX",
+        "texto": "C",
+        "stop": "eos",
+        "ms": 375.0
+      }
+    ]
+  }
+]

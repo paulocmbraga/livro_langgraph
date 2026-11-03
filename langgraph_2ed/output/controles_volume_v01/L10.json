@@ -1,0 +1,63 @@
+{
+  "capitulo": 10,
+  "origem": "funcional",
+  "segundos": 17.938,
+  "observacao": {
+    "aceitar": {
+      "graph": {
+        "inicio": {
+          "status": "revisao",
+          "proposta": "AURORA"
+        },
+        "fim": {
+          "status": "concluida",
+          "proposta": "AURORA",
+          "aprovado": true
+        },
+        "preparos": 1,
+        "reentradas_corpo": 2
+      },
+      "functional": {
+        "inicio": {
+          "status": "revisao",
+          "proposta": "AURORA"
+        },
+        "fim": {
+          "status": "concluida",
+          "proposta": "AURORA",
+          "aprovado": true
+        },
+        "preparos": 1,
+        "reentradas_corpo": 2
+      }
+    },
+    "recusar": {
+      "graph": {
+        "inicio": {
+          "status": "revisao",
+          "proposta": "AURORA"
+        },
+        "fim": {
+          "status": "concluida",
+          "proposta": "AURORA",
+          "aprovado": false
+        },
+        "preparos": 1,
+        "reentradas_corpo": 2
+      },
+      "functional": {
+        "inicio": {
+          "status": "revisao",
+          "proposta": "AURORA"
+        },
+        "fim": {
+          "status": "concluida",
+          "proposta": "AURORA",
+          "aprovado": false
+        },
+        "preparos": 1,
+        "reentradas_corpo": 2
+      }
+    }
+  }
+}

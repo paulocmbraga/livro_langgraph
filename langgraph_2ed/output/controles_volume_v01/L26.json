@@ -1,0 +1,450 @@
+{
+  "capitulo": 26,
+  "origem": 19,
+  "segundos": 0.016,
+  "observacao": {
+    "capitulo": 19,
+    "inferencia_real": false,
+    "casos": [
+      {
+        "nome": "base_logica",
+        "observado": 65,
+        "esperado": 65,
+        "confere": true
+      },
+      {
+        "nome": "atraso_localizado",
+        "observado": 110,
+        "esperado": 110,
+        "confere": true
+      },
+      {
+        "nome": "tentativas_distintas",
+        "observado": [
+          1,
+          2
+        ],
+        "esperado": [
+          1,
+          2
+        ],
+        "confere": true
+      },
+      {
+        "nome": "uso_desconhecido_preservado",
+        "observado": null,
+        "esperado": null,
+        "confere": true
+      },
+      {
+        "nome": "contexto_maior",
+        "observado": 800,
+        "esperado": 800,
+        "confere": true
+      },
+      {
+        "nome": "hierarquia_sem_soma_dupla",
+        "observado": [
+          130,
+          65
+        ],
+        "esperado": [
+          130,
+          65
+        ],
+        "confere": true
+      },
+      {
+        "nome": "cache_e_expiracao",
+        "observado": [
+          false,
+          true,
+          false,
+          2
+        ],
+        "esperado": [
+          false,
+          true,
+          false,
+          2
+        ],
+        "confere": true
+      },
+      {
+        "nome": "isolamento_chave",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "invalida_corpus",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "autoriza_antes_do_hit",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "exportacao_projetada",
+        "observado": [
+          1,
+          false,
+          {}
+        ],
+        "esperado": [
+          1,
+          false,
+          {}
+        ],
+        "confere": true
+      },
+      {
+        "nome": "percentil_metodo_declarado",
+        "observado": 100,
+        "esperado": 100,
+        "confere": true
+      }
+    ],
+    "ensaios": {
+      "base": {
+        "spans": [
+          {
+            "execucao": "execucao-19",
+            "id": 1,
+            "pai": null,
+            "etapa": "requisicao",
+            "tentativa": 1,
+            "inicio_ms": 0,
+            "situacao": "ok",
+            "fim_ms": 65,
+            "duracao_ms": 65
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 2,
+            "pai": 1,
+            "etapa": "fila",
+            "tentativa": 1,
+            "inicio_ms": 0,
+            "situacao": "ok",
+            "fim_ms": 20,
+            "duracao_ms": 20
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 3,
+            "pai": 1,
+            "etapa": "recuperar",
+            "tentativa": 1,
+            "inicio_ms": 20,
+            "situacao": "ok",
+            "fim_ms": 30,
+            "duracao_ms": 10
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 4,
+            "pai": 1,
+            "etapa": "modelo",
+            "tentativa": 1,
+            "inicio_ms": 30,
+            "situacao": "ok",
+            "fim_ms": 60,
+            "duracao_ms": 30
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 5,
+            "pai": 1,
+            "etapa": "ferramenta",
+            "tentativa": 1,
+            "inicio_ms": 60,
+            "situacao": "ok",
+            "fim_ms": 65,
+            "duracao_ms": 5
+          }
+        ],
+        "usos": [
+          {
+            "tentativa": 1,
+            "estimativa_entrada": 40,
+            "entrada": 40,
+            "saida": 10,
+            "origem": "simulada"
+          }
+        ],
+        "resultado": {
+          "estimativa_entrada": 40,
+          "resposta": "Instale Aurora Connect."
+        },
+        "relogio": "logico_ms",
+        "custo": {
+          "parcial_conhecido": "0.00014",
+          "total": "0.00014",
+          "tentativas_incompletas": 0,
+          "moeda": "unidade_monetaria_ficticia"
+        }
+      },
+      "atraso": {
+        "spans": [
+          {
+            "execucao": "execucao-19",
+            "id": 1,
+            "pai": null,
+            "etapa": "requisicao",
+            "tentativa": 1,
+            "inicio_ms": 0,
+            "situacao": "ok",
+            "fim_ms": 165,
+            "duracao_ms": 165
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 2,
+            "pai": 1,
+            "etapa": "fila",
+            "tentativa": 1,
+            "inicio_ms": 0,
+            "situacao": "ok",
+            "fim_ms": 20,
+            "duracao_ms": 20
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 3,
+            "pai": 1,
+            "etapa": "recuperar",
+            "tentativa": 1,
+            "inicio_ms": 20,
+            "situacao": "ok",
+            "fim_ms": 130,
+            "duracao_ms": 110
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 4,
+            "pai": 1,
+            "etapa": "modelo",
+            "tentativa": 1,
+            "inicio_ms": 130,
+            "situacao": "ok",
+            "fim_ms": 160,
+            "duracao_ms": 30
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 5,
+            "pai": 1,
+            "etapa": "ferramenta",
+            "tentativa": 1,
+            "inicio_ms": 160,
+            "situacao": "ok",
+            "fim_ms": 165,
+            "duracao_ms": 5
+          }
+        ],
+        "usos": [
+          {
+            "tentativa": 1,
+            "estimativa_entrada": 40,
+            "entrada": 40,
+            "saida": 10,
+            "origem": "simulada"
+          }
+        ],
+        "resultado": {
+          "estimativa_entrada": 40,
+          "resposta": "Instale Aurora Connect."
+        },
+        "relogio": "logico_ms",
+        "custo": {
+          "parcial_conhecido": "0.00014",
+          "total": "0.00014",
+          "tentativas_incompletas": 0,
+          "moeda": "unidade_monetaria_ficticia"
+        }
+      },
+      "reenvio": {
+        "spans": [
+          {
+            "execucao": "execucao-19",
+            "id": 1,
+            "pai": null,
+            "etapa": "requisicao",
+            "tentativa": 1,
+            "inicio_ms": 0,
+            "situacao": "ok",
+            "fim_ms": 85,
+            "duracao_ms": 85
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 2,
+            "pai": 1,
+            "etapa": "fila",
+            "tentativa": 1,
+            "inicio_ms": 0,
+            "situacao": "ok",
+            "fim_ms": 20,
+            "duracao_ms": 20
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 3,
+            "pai": 1,
+            "etapa": "recuperar",
+            "tentativa": 1,
+            "inicio_ms": 20,
+            "situacao": "ok",
+            "fim_ms": 30,
+            "duracao_ms": 10
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 4,
+            "pai": 1,
+            "etapa": "modelo",
+            "tentativa": 1,
+            "inicio_ms": 30,
+            "situacao": "erro",
+            "fim_ms": 50,
+            "duracao_ms": 20
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 5,
+            "pai": 1,
+            "etapa": "modelo",
+            "tentativa": 2,
+            "inicio_ms": 50,
+            "situacao": "ok",
+            "fim_ms": 80,
+            "duracao_ms": 30
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 6,
+            "pai": 1,
+            "etapa": "ferramenta",
+            "tentativa": 1,
+            "inicio_ms": 80,
+            "situacao": "ok",
+            "fim_ms": 85,
+            "duracao_ms": 5
+          }
+        ],
+        "usos": [
+          {
+            "tentativa": 1,
+            "estimativa_entrada": 40,
+            "entrada": null,
+            "saida": null,
+            "origem": "simulada"
+          },
+          {
+            "tentativa": 2,
+            "estimativa_entrada": 40,
+            "entrada": 40,
+            "saida": 10,
+            "origem": "simulada"
+          }
+        ],
+        "resultado": {
+          "estimativa_entrada": 40,
+          "resposta": "Instale Aurora Connect."
+        },
+        "relogio": "logico_ms",
+        "custo": {
+          "parcial_conhecido": "0.00014",
+          "total": null,
+          "tentativas_incompletas": 1,
+          "moeda": "unidade_monetaria_ficticia"
+        }
+      },
+      "contexto": {
+        "spans": [
+          {
+            "execucao": "execucao-19",
+            "id": 1,
+            "pai": null,
+            "etapa": "requisicao",
+            "tentativa": 1,
+            "inicio_ms": 0,
+            "situacao": "ok",
+            "fim_ms": 65,
+            "duracao_ms": 65
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 2,
+            "pai": 1,
+            "etapa": "fila",
+            "tentativa": 1,
+            "inicio_ms": 0,
+            "situacao": "ok",
+            "fim_ms": 20,
+            "duracao_ms": 20
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 3,
+            "pai": 1,
+            "etapa": "recuperar",
+            "tentativa": 1,
+            "inicio_ms": 20,
+            "situacao": "ok",
+            "fim_ms": 30,
+            "duracao_ms": 10
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 4,
+            "pai": 1,
+            "etapa": "modelo",
+            "tentativa": 1,
+            "inicio_ms": 30,
+            "situacao": "ok",
+            "fim_ms": 60,
+            "duracao_ms": 30
+          },
+          {
+            "execucao": "execucao-19",
+            "id": 5,
+            "pai": 1,
+            "etapa": "ferramenta",
+            "tentativa": 1,
+            "inicio_ms": 60,
+            "situacao": "ok",
+            "fim_ms": 65,
+            "duracao_ms": 5
+          }
+        ],
+        "usos": [
+          {
+            "tentativa": 1,
+            "estimativa_entrada": 800,
+            "entrada": 800,
+            "saida": 10,
+            "origem": "simulada"
+          }
+        ],
+        "resultado": {
+          "estimativa_entrada": 800,
+          "resposta": "Instale Aurora Connect."
+        },
+        "relogio": "logico_ms",
+        "custo": {
+          "parcial_conhecido": "0.00166",
+          "total": "0.00166",
+          "tentativas_incompletas": 0,
+          "moeda": "unidade_monetaria_ficticia"
+        }
+      }
+    },
+    "langsmith": "cliente_simulado_sem_rede"
+  }
+}

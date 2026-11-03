@@ -1,0 +1,149 @@
+{
+  "capitulo": 19,
+  "origem": "mcp_local",
+  "segundos": 0.188,
+  "observacao": {
+    "versao": "2025-11-25",
+    "ferramentas": 1,
+    "consulta": {
+      "recurso": "A-17",
+      "status": "aberto",
+      "revisao": 1
+    },
+    "cruzamento_recusado": true,
+    "transcrito": [
+      {
+        "envio": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "initialize",
+          "params": {
+            "protocolVersion": "2025-11-25",
+            "capabilities": {},
+            "clientInfo": {
+              "name": "livro-langgraph",
+              "version": "1.0"
+            }
+          }
+        }
+      },
+      {
+        "recebimento": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "protocolVersion": "2025-11-25",
+            "capabilities": {
+              "tools": {}
+            },
+            "serverInfo": {
+              "name": "aurora-leitura",
+              "version": "1.0"
+            }
+          }
+        }
+      },
+      {
+        "envio": {
+          "jsonrpc": "2.0",
+          "method": "notifications/initialized"
+        }
+      },
+      {
+        "envio": {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "tools/list",
+          "params": {}
+        }
+      },
+      {
+        "recebimento": {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "result": {
+            "tools": [
+              {
+                "name": "consultar_chamado",
+                "description": "Consulta no escopo Aurora.",
+                "inputSchema": {
+                  "type": "object",
+                  "properties": {
+                    "recurso": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "recurso"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "envio": {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "tools/call",
+          "params": {
+            "name": "consultar_chamado",
+            "arguments": {
+              "recurso": "A-17"
+            }
+          }
+        }
+      },
+      {
+        "recebimento": {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "result": {
+            "structuredContent": {
+              "recurso": "A-17",
+              "status": "aberto",
+              "revisao": 1
+            },
+            "isError": false,
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"recurso\": \"A-17\", \"status\": \"aberto\", \"revisao\": 1}"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "envio": {
+          "jsonrpc": "2.0",
+          "id": 4,
+          "method": "tools/call",
+          "params": {
+            "name": "consultar_chamado",
+            "arguments": {
+              "recurso": "B-29"
+            }
+          }
+        }
+      },
+      {
+        "recebimento": {
+          "jsonrpc": "2.0",
+          "id": 4,
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "Consulta recusada."
+              }
+            ],
+            "isError": true
+          }
+        }
+      }
+    ]
+  }
+}

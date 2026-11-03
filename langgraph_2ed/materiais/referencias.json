@@ -1,0 +1,188 @@
+{
+  "T01": {
+    "familia": "consulta",
+    "fatos": [
+      "MAN-591"
+    ],
+    "efeitos": []
+  },
+  "T02": {
+    "familia": "consulta",
+    "fatos": [
+      "MAN-664"
+    ],
+    "efeitos": []
+  },
+  "T03": {
+    "familia": "consulta",
+    "fatos": [
+      "MAN-737"
+    ],
+    "efeitos": []
+  },
+  "T04": {
+    "familia": "consulta",
+    "fatos": [
+      "MAN-810"
+    ],
+    "efeitos": []
+  },
+  "T05": {
+    "familia": "consulta",
+    "fatos": [
+      "MAN-883"
+    ],
+    "efeitos": []
+  },
+  "T06": {
+    "familia": "consulta",
+    "fatos": [
+      "MAN-956"
+    ],
+    "efeitos": []
+  },
+  "T07": {
+    "familia": "operacao",
+    "fatos": [
+      "REC-AU-66"
+    ],
+    "efeitos": [
+      "REC-AU-66"
+    ]
+  },
+  "T08": {
+    "familia": "operacao",
+    "fatos": [
+      "ST-812"
+    ],
+    "efeitos": []
+  },
+  "T09": {
+    "familia": "operacao",
+    "fatos": [
+      "REC-AU-19"
+    ],
+    "efeitos": [
+      "REC-AU-19"
+    ]
+  },
+  "T10": {
+    "familia": "operacao",
+    "fatos": [
+      "ST-918"
+    ],
+    "efeitos": []
+  },
+  "T11": {
+    "familia": "operacao",
+    "fatos": [
+      "REC-AU-37"
+    ],
+    "efeitos": [
+      "REC-AU-37"
+    ]
+  },
+  "T12": {
+    "familia": "operacao",
+    "fatos": [
+      "ST-31"
+    ],
+    "efeitos": []
+  },
+  "T13": {
+    "familia": "mista",
+    "fatos": [
+      "MAN-470",
+      "REC-AU-23"
+    ],
+    "efeitos": [
+      "REC-AU-23"
+    ]
+  },
+  "T14": {
+    "familia": "mista",
+    "fatos": [
+      "MAN-543",
+      "ST-137"
+    ],
+    "efeitos": []
+  },
+  "T15": {
+    "familia": "mista",
+    "fatos": [
+      "MAN-616",
+      "REC-AU-41"
+    ],
+    "efeitos": [
+      "REC-AU-41"
+    ]
+  },
+  "T16": {
+    "familia": "mista",
+    "fatos": [
+      "MAN-689",
+      "ST-243"
+    ],
+    "efeitos": []
+  },
+  "T17": {
+    "familia": "mista",
+    "fatos": [
+      "MAN-762",
+      "REC-AU-32"
+    ],
+    "efeitos": [
+      "REC-AU-32"
+    ]
+  },
+  "T18": {
+    "familia": "mista",
+    "fatos": [
+      "MAN-835",
+      "ST-349"
+    ],
+    "efeitos": []
+  },
+  "T19": {
+    "familia": "sem_autorizacao",
+    "fatos": [
+      "NEGADO"
+    ],
+    "efeitos": []
+  },
+  "T20": {
+    "familia": "sem_autorizacao",
+    "fatos": [
+      "NEGADO"
+    ],
+    "efeitos": []
+  },
+  "T21": {
+    "familia": "sem_autorizacao",
+    "fatos": [
+      "NEGADO"
+    ],
+    "efeitos": []
+  },
+  "T22": {
+    "familia": "sem_autorizacao",
+    "fatos": [
+      "NEGADO"
+    ],
+    "efeitos": []
+  },
+  "T23": {
+    "familia": "sem_autorizacao",
+    "fatos": [
+      "NEGADO"
+    ],
+    "efeitos": []
+  },
+  "T24": {
+    "familia": "sem_autorizacao",
+    "fatos": [
+      "NEGADO"
+    ],
+    "efeitos": []
+  }
+}

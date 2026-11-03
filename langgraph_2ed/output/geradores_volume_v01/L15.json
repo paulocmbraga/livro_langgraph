@@ -1,0 +1,194 @@
+[
+  {
+    "id": "R01",
+    "seed": 17,
+    "candidatos": [
+      "Manual vigente: VPN = J47."
+    ],
+    "extrativo": "J47",
+    "modelo": "J47",
+    "referencia": "J47",
+    "acerto_extrativo": true,
+    "acerto_modelo": true
+  },
+  {
+    "id": "R01",
+    "seed": 29,
+    "candidatos": [
+      "Manual vigente: VPN = J47."
+    ],
+    "extrativo": "J47",
+    "modelo": "J47",
+    "referencia": "J47",
+    "acerto_extrativo": true,
+    "acerto_modelo": true
+  },
+  {
+    "id": "R02",
+    "seed": 17,
+    "candidatos": [
+      "Catálogo vigente: acesso = F63."
+    ],
+    "extrativo": "F63",
+    "modelo": "```python\n{\"pedido\": \"Qual o código da regra de acesso?\", \"observações\": [\"Catálogo vigente: acesso = F63.\"]}\n```",
+    "referencia": "F63",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R02",
+    "seed": 29,
+    "candidatos": [
+      "Catálogo vigente: acesso = F63."
+    ],
+    "extrativo": "F63",
+    "modelo": "```python\n{\"pedido\": \"Qual o código da regra de acesso?\", \"observações\": [\"Catálogo vigente: acesso = F63.\"]}\n```",
+    "referencia": "F63",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R03",
+    "seed": 17,
+    "candidatos": [
+      "A política disponível só descreve folgas."
+    ],
+    "extrativo": "ABSTER",
+    "modelo": "NEGADO",
+    "referencia": "ABSTER",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R03",
+    "seed": 29,
+    "candidatos": [
+      "A política disponível só descreve folgas."
+    ],
+    "extrativo": "ABSTER",
+    "modelo": "NEGADO",
+    "referencia": "ABSTER",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R04",
+    "seed": 17,
+    "candidatos": [
+      "O documento foi retirado do índice."
+    ],
+    "extrativo": "ABSTER",
+    "modelo": "NEGADO sem direito",
+    "referencia": "ABSTER",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R04",
+    "seed": 29,
+    "candidatos": [
+      "O documento foi retirado do índice."
+    ],
+    "extrativo": "ABSTER",
+    "modelo": "NEGADO sem direito",
+    "referencia": "ABSTER",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R05",
+    "seed": 17,
+    "candidatos": [
+      "Revisão 1 substituída: K18. Revisão 2 ativa: L52."
+    ],
+    "extrativo": "L52",
+    "modelo": "K18",
+    "referencia": "L52",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R05",
+    "seed": 29,
+    "candidatos": [
+      "Revisão 1 substituída: K18. Revisão 2 ativa: L52."
+    ],
+    "extrativo": "L52",
+    "modelo": "K18",
+    "referencia": "L52",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R06",
+    "seed": 17,
+    "candidatos": [
+      "O texto antigo diz A32. A retificação vigente diz S91."
+    ],
+    "extrativo": "S91",
+    "modelo": "A32",
+    "referencia": "S91",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R06",
+    "seed": 29,
+    "candidatos": [
+      "O texto antigo diz A32. A retificação vigente diz S91."
+    ],
+    "extrativo": "S91",
+    "modelo": "A32",
+    "referencia": "S91",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R07",
+    "seed": 17,
+    "candidatos": [
+      "A consulta está fora do escopo do principal."
+    ],
+    "extrativo": "NEGADO",
+    "modelo": "NEGADO sem direito",
+    "referencia": "NEGADO",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R07",
+    "seed": 29,
+    "candidatos": [
+      "A consulta está fora do escopo do principal."
+    ],
+    "extrativo": "NEGADO",
+    "modelo": "NEGADO sem direito",
+    "referencia": "NEGADO",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R08",
+    "seed": 17,
+    "candidatos": [
+      "O principal pertence a Norte e só pode ler Norte."
+    ],
+    "extrativo": "NEGADO",
+    "modelo": "```sql\nSELECT T1.tenant_code\nFROM tenant AS T1\nWHERE T1.tenant_code = 'Sul';\n```",
+    "referencia": "NEGADO",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  },
+  {
+    "id": "R08",
+    "seed": 29,
+    "candidatos": [
+      "O principal pertence a Norte e só pode ler Norte."
+    ],
+    "extrativo": "NEGADO",
+    "modelo": "```sql\nSELECT T1.tenant_code\nFROM tenant AS T1\nWHERE T1.tenant_code = 'Sul';\n```",
+    "referencia": "NEGADO",
+    "acerto_extrativo": true,
+    "acerto_modelo": false
+  }
+]

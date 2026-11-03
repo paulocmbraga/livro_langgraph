@@ -1,0 +1,23 @@
+[
+  {
+    "modo": "sync",
+    "barreira": "esperar",
+    "saida_worker": -15,
+    "checkpoint": true,
+    "etapa": "registrada"
+  },
+  {
+    "modo": "async",
+    "barreira": "esperar",
+    "saida_worker": -15,
+    "checkpoint": true,
+    "etapa": null
+  },
+  {
+    "modo": "exit",
+    "barreira": "esperar",
+    "saida_worker": -15,
+    "checkpoint": false,
+    "etapa": null
+  }
+]

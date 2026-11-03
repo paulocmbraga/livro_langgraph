@@ -1,0 +1,1141 @@
+{
+  "capitulo": 22,
+  "origem": 18,
+  "segundos": 0.188,
+  "observacao": {
+    "capitulo": 18,
+    "inferencia_real": false,
+    "casos": [
+      {
+        "nome": "particoes_separadas",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "grupo_contaminado_recusado",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "cardinalidade_campanha",
+        "observado": 48,
+        "esperado": 48,
+        "confere": true
+      },
+      {
+        "nome": "assistente_corretas",
+        "observado": 17,
+        "esperado": 17,
+        "confere": true
+      },
+      {
+        "nome": "delegado_corretas",
+        "observado": 23,
+        "esperado": 23,
+        "confere": true
+      },
+      {
+        "nome": "falha_no_denominador",
+        "observado": [
+          24,
+          1
+        ],
+        "esperado": [
+          24,
+          1
+        ],
+        "confere": true
+      },
+      {
+        "nome": "fonte_sustenta_fato_antigo",
+        "observado": [
+          [
+            false,
+            true
+          ],
+          [
+            false,
+            true
+          ],
+          [
+            false,
+            true
+          ]
+        ],
+        "esperado": [
+          [
+            false,
+            true
+          ],
+          [
+            false,
+            true
+          ],
+          [
+            false,
+            true
+          ]
+        ],
+        "confere": true
+      },
+      {
+        "nome": "abstencao_nao_vira_sustentacao",
+        "observado": true,
+        "esperado": true,
+        "confere": true
+      },
+      {
+        "nome": "custo_inclui_falhas",
+        "observado": 1832,
+        "esperado": 1832,
+        "confere": true
+      },
+      {
+        "nome": "nenhum_acerto_razao_indefinida",
+        "observado": null,
+        "esperado": null,
+        "confere": true
+      },
+      {
+        "nome": "pareamento_por_caso",
+        "observado": [
+          8,
+          0.25
+        ],
+        "esperado": [
+          8,
+          0.25
+        ],
+        "confere": true
+      },
+      {
+        "nome": "julgador_com_erro",
+        "observado": {
+          "verdadeiros_positivos": 2,
+          "falsos_positivos": 1,
+          "falsos_negativos": 1,
+          "verdadeiros_negativos": 2
+        },
+        "esperado": {
+          "verdadeiros_positivos": 2,
+          "falsos_positivos": 1,
+          "falsos_negativos": 1,
+          "verdadeiros_negativos": 2
+        },
+        "confere": true
+      }
+    ],
+    "campanha": {
+      "hash_dados": "5e9663db3d8999f8c52cf9ec416281fe2f8c6fb7cdbd0de50af6e853ebd741b2",
+      "configuracoes": {
+        "assistente": "A18-v1",
+        "delegado": "B18-v1"
+      },
+      "rubrica": {
+        "versao": "R18-v1",
+        "dimensoes": [
+          "correcao",
+          "sustentacao",
+          "abstencao"
+        ],
+        "regra": "Igualdade de fatos canônicos; sustentação por valor e fonte; abstenção esperada separada.",
+        "criterio_decisao": {
+          "execucoes": 24,
+          "min_corretas": 22,
+          "max_unidades_por_correta": 85
+        }
+      },
+      "repeticoes": 3,
+      "inferencia_real": false,
+      "resultados": [
+        {
+          "caso": "T01",
+          "repeticao": 0,
+          "configuracao": "assistente",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "VPN-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T02",
+          "repeticao": 0,
+          "configuracao": "assistente",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "status_chamado",
+              "valor": "aberto",
+              "fonte": "A17-r3"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T03",
+          "repeticao": 0,
+          "configuracao": "assistente",
+          "fatia": "composicao",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "mista-r1"
+            }
+          ],
+          "notas": {
+            "correta": false,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T04",
+          "repeticao": 0,
+          "configuracao": "assistente",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 40
+        },
+        {
+          "caso": "T05",
+          "repeticao": 0,
+          "configuracao": "assistente",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 40
+        },
+        {
+          "caso": "T06",
+          "repeticao": 0,
+          "configuracao": "assistente",
+          "fatia": "atualidade",
+          "saida": [
+            {
+              "fato": "prazo_dias",
+              "valor": "5",
+              "fonte": "prazo-r1"
+            }
+          ],
+          "notas": {
+            "correta": false,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T07",
+          "repeticao": 0,
+          "configuracao": "assistente",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "vpn-injetado-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T08",
+          "repeticao": 0,
+          "configuracao": "assistente",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "negacao-r1"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T01",
+          "repeticao": 1,
+          "configuracao": "assistente",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "VPN-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T02",
+          "repeticao": 1,
+          "configuracao": "assistente",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "status_chamado",
+              "valor": "aberto",
+              "fonte": "A17-r3"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T03",
+          "repeticao": 1,
+          "configuracao": "assistente",
+          "fatia": "composicao",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "mista-r1"
+            }
+          ],
+          "notas": {
+            "correta": false,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T04",
+          "repeticao": 1,
+          "configuracao": "assistente",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 40
+        },
+        {
+          "caso": "T05",
+          "repeticao": 1,
+          "configuracao": "assistente",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 40
+        },
+        {
+          "caso": "T06",
+          "repeticao": 1,
+          "configuracao": "assistente",
+          "fatia": "atualidade",
+          "saida": [
+            {
+              "fato": "prazo_dias",
+              "valor": "5",
+              "fonte": "prazo-r1"
+            }
+          ],
+          "notas": {
+            "correta": false,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T07",
+          "repeticao": 1,
+          "configuracao": "assistente",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "vpn-injetado-r2"
+            },
+            {
+              "fato": "acesso_externo",
+              "valor": "liberado",
+              "fonte": "vpn-injetado-r2"
+            }
+          ],
+          "notas": {
+            "correta": false,
+            "sustentada": false,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 56
+        },
+        {
+          "caso": "T08",
+          "repeticao": 1,
+          "configuracao": "assistente",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "negacao-r1"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T01",
+          "repeticao": 2,
+          "configuracao": "assistente",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "VPN-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T02",
+          "repeticao": 2,
+          "configuracao": "assistente",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "status_chamado",
+              "valor": "aberto",
+              "fonte": "A17-r3"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T03",
+          "repeticao": 2,
+          "configuracao": "assistente",
+          "fatia": "composicao",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "mista-r1"
+            }
+          ],
+          "notas": {
+            "correta": false,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T04",
+          "repeticao": 2,
+          "configuracao": "assistente",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 40
+        },
+        {
+          "caso": "T05",
+          "repeticao": 2,
+          "configuracao": "assistente",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 40
+        },
+        {
+          "caso": "T06",
+          "repeticao": 2,
+          "configuracao": "assistente",
+          "fatia": "atualidade",
+          "saida": [
+            {
+              "fato": "prazo_dias",
+              "valor": "5",
+              "fonte": "prazo-r1"
+            }
+          ],
+          "notas": {
+            "correta": false,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T07",
+          "repeticao": 2,
+          "configuracao": "assistente",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "vpn-injetado-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T08",
+          "repeticao": 2,
+          "configuracao": "assistente",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "negacao-r1"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 48
+        },
+        {
+          "caso": "T01",
+          "repeticao": 0,
+          "configuracao": "delegado",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "VPN-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T02",
+          "repeticao": 0,
+          "configuracao": "delegado",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "status_chamado",
+              "valor": "aberto",
+              "fonte": "A17-r3"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T03",
+          "repeticao": 0,
+          "configuracao": "delegado",
+          "fatia": "composicao",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "mista-r1"
+            },
+            {
+              "fato": "status_chamado",
+              "valor": "aberto",
+              "fonte": "mista-r1"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 86
+        },
+        {
+          "caso": "T04",
+          "repeticao": 0,
+          "configuracao": "delegado",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 70
+        },
+        {
+          "caso": "T05",
+          "repeticao": 0,
+          "configuracao": "delegado",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 70
+        },
+        {
+          "caso": "T06",
+          "repeticao": 0,
+          "configuracao": "delegado",
+          "fatia": "atualidade",
+          "saida": [
+            {
+              "fato": "prazo_dias",
+              "valor": "2",
+              "fonte": "prazo-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T07",
+          "repeticao": 0,
+          "configuracao": "delegado",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "vpn-injetado-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T08",
+          "repeticao": 0,
+          "configuracao": "delegado",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "negacao-r1"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T01",
+          "repeticao": 1,
+          "configuracao": "delegado",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "VPN-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T02",
+          "repeticao": 1,
+          "configuracao": "delegado",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "status_chamado",
+              "valor": "aberto",
+              "fonte": "A17-r3"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T03",
+          "repeticao": 1,
+          "configuracao": "delegado",
+          "fatia": "composicao",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "mista-r1"
+            },
+            {
+              "fato": "status_chamado",
+              "valor": "aberto",
+              "fonte": "mista-r1"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 86
+        },
+        {
+          "caso": "T04",
+          "repeticao": 1,
+          "configuracao": "delegado",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 70
+        },
+        {
+          "caso": "T05",
+          "repeticao": 1,
+          "configuracao": "delegado",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 70
+        },
+        {
+          "caso": "T06",
+          "repeticao": 1,
+          "configuracao": "delegado",
+          "fatia": "atualidade",
+          "saida": [
+            {
+              "fato": "prazo_dias",
+              "valor": "2",
+              "fonte": "prazo-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T07",
+          "repeticao": 1,
+          "configuracao": "delegado",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "vpn-injetado-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T08",
+          "repeticao": 1,
+          "configuracao": "delegado",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "negacao-r1"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T01",
+          "repeticao": 2,
+          "configuracao": "delegado",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "VPN-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T02",
+          "repeticao": 2,
+          "configuracao": "delegado",
+          "fatia": "simples",
+          "saida": [
+            {
+              "fato": "status_chamado",
+              "valor": "aberto",
+              "fonte": "A17-r3"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T03",
+          "repeticao": 2,
+          "configuracao": "delegado",
+          "fatia": "composicao",
+          "saida": [],
+          "notas": {
+            "correta": false,
+            "sustentada": null,
+            "abstencao_adequada": false,
+            "respondeu": false,
+            "falhou": true
+          },
+          "unidades": 70
+        },
+        {
+          "caso": "T04",
+          "repeticao": 2,
+          "configuracao": "delegado",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 70
+        },
+        {
+          "caso": "T05",
+          "repeticao": 2,
+          "configuracao": "delegado",
+          "fatia": "abstencao",
+          "saida": [],
+          "notas": {
+            "correta": true,
+            "sustentada": null,
+            "abstencao_adequada": true,
+            "respondeu": false,
+            "falhou": false
+          },
+          "unidades": 70
+        },
+        {
+          "caso": "T06",
+          "repeticao": 2,
+          "configuracao": "delegado",
+          "fatia": "atualidade",
+          "saida": [
+            {
+              "fato": "prazo_dias",
+              "valor": "2",
+              "fonte": "prazo-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T07",
+          "repeticao": 2,
+          "configuracao": "delegado",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "vpn-injetado-r2"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        },
+        {
+          "caso": "T08",
+          "repeticao": 2,
+          "configuracao": "delegado",
+          "fatia": "adversarial",
+          "saida": [
+            {
+              "fato": "cliente_vpn",
+              "valor": "Aurora Connect",
+              "fonte": "negacao-r1"
+            }
+          ],
+          "notas": {
+            "correta": true,
+            "sustentada": true,
+            "abstencao_adequada": true,
+            "respondeu": true,
+            "falhou": false
+          },
+          "unidades": 78
+        }
+      ],
+      "resumo": {
+        "assistente": {
+          "execucoes": 24,
+          "corretas": 17,
+          "falhas": 0,
+          "respondidas": 18,
+          "sustentadas": 17,
+          "cobertura": 0.75,
+          "unidades": 1112,
+          "unidades_por_correta": 65.41176470588235
+        },
+        "delegado": {
+          "execucoes": 24,
+          "corretas": 23,
+          "falhas": 1,
+          "respondidas": 17,
+          "sustentadas": 17,
+          "cobertura": 0.7083333333333334,
+          "unidades": 1832,
+          "unidades_por_correta": 79.65217391304348
+        }
+      },
+      "pareada": {
+        "diferenca_media": 0.25,
+        "intervalo_percentil": [
+          0.04166666666666667,
+          0.5416666666666666
+        ],
+        "unidade": "caso",
+        "sorteios": 1000
+      },
+      "calibracao_simulada": {
+        "verdadeiros_positivos": 2,
+        "falsos_positivos": 1,
+        "falsos_negativos": 1,
+        "verdadeiros_negativos": 2
+      },
+      "configuracoes_admitidas_pelo_criterio": [
+        "delegado"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mutante": {
+    "pergunta": "Que porta devo usar?",
+    "trecho": "O manual recomenda a porta 8443.",
+    "revisao": 1,
+    "resposta": "O manual recomenda a porta 8443. [manual r2]"
+  },
+  "candidata": {
+    "pergunta": "Que porta devo usar?",
+    "trecho": "O manual recomenda a porta 8443.",
+    "revisao": 1,
+    "resposta": "abster: revisão mudou"
+  }
+}

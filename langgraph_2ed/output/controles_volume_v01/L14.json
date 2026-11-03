@@ -1,0 +1,147 @@
+{
+  "capitulo": 14,
+  "origem": 8,
+  "segundos": 0.047,
+  "observacao": {
+    "capitulo": 8,
+    "casos": [
+      {
+        "nome": "respondível",
+        "observado": "citacoes_validas",
+        "esperado": "citacoes_validas",
+        "confere": true,
+        "responde_adequadamente_gabarito": true,
+        "chamadas_modelo": 1,
+        "fontes": [
+          "VPN-r2-1"
+        ]
+      },
+      {
+        "nome": "ausente",
+        "observado": "sem_evidencia",
+        "esperado": "sem_evidencia",
+        "confere": true,
+        "responde_adequadamente_gabarito": false,
+        "chamadas_modelo": 0,
+        "fontes": []
+      },
+      {
+        "nome": "conflito",
+        "observado": "conflito",
+        "esperado": "conflito",
+        "confere": true,
+        "responde_adequadamente_gabarito": false,
+        "chamadas_modelo": 0,
+        "fontes": [
+          "PRAZO-A-r1-1",
+          "PRAZO-B-r1-1"
+        ]
+      },
+      {
+        "nome": "citacao_inventada",
+        "observado": "citacao_invalida",
+        "esperado": "citacao_invalida",
+        "confere": true,
+        "responde_adequadamente_gabarito": false,
+        "chamadas_modelo": 1,
+        "fontes": [
+          "VPN-r2-1"
+        ]
+      },
+      {
+        "nome": "fonte_inventada",
+        "observado": "citacao_invalida",
+        "esperado": "citacao_invalida",
+        "confere": true,
+        "responde_adequadamente_gabarito": false,
+        "chamadas_modelo": 1,
+        "fontes": [
+          "VPN-r2-1"
+        ]
+      },
+      {
+        "nome": "parafrase_sinonima",
+        "observado": "sem_evidencia",
+        "esperado": "sem_evidencia",
+        "confere": true,
+        "responde_adequadamente_gabarito": false,
+        "chamadas_modelo": 0,
+        "fontes": []
+      },
+      {
+        "nome": "top1_oculta_conflito",
+        "observado": "citacoes_validas",
+        "esperado": "citacoes_validas",
+        "confere": true,
+        "responde_adequadamente_gabarito": false,
+        "chamadas_modelo": 1,
+        "fontes": [
+          "PRAZO-A-r1-1"
+        ]
+      },
+      {
+        "nome": "abstencao",
+        "observado": "abstencao",
+        "esperado": "abstencao",
+        "confere": true,
+        "responde_adequadamente_gabarito": false,
+        "chamadas_modelo": 1,
+        "fontes": [
+          "VPN-r2-1"
+        ]
+      },
+      {
+        "nome": "json_invalido",
+        "observado": "estrutura_invalida",
+        "esperado": "estrutura_invalida",
+        "confere": true,
+        "responde_adequadamente_gabarito": false,
+        "chamadas_modelo": 1,
+        "fontes": [
+          "VPN-r2-1"
+        ]
+      },
+      {
+        "nome": "fonte_certa_pergunta_errada",
+        "observado": "citacoes_validas",
+        "esperado": "citacoes_validas",
+        "confere": true,
+        "responde_adequadamente_gabarito": false,
+        "chamadas_modelo": 1,
+        "fontes": [
+          "SENHA-r1-1",
+          "VPN-r2-1"
+        ]
+      },
+      {
+        "nome": "isolamento",
+        "observado": [
+          "SENHA-r1-1"
+        ],
+        "esperado": [
+          "SENHA-r1-1"
+        ],
+        "confere": true
+      },
+      {
+        "nome": "revisao_ativa",
+        "observado": [
+          "VPN-r2-1"
+        ],
+        "esperado": [
+          "VPN-r2-1"
+        ],
+        "confere": true
+      }
+    ],
+    "comparacao": {
+      "pergunta": "Como configurar a VPN?",
+      "direta_roteirizada": "Use o cliente legado.",
+      "direta_correta": false,
+      "com_recuperacao_roteirizada": "Para configurar a VPN, instale o cliente Aurora Connect.",
+      "com_recuperacao_correta": true,
+      "recall": 1.0,
+      "limite": "Contraste controlado; não estima vantagem de um modelo real."
+    }
+  }
+}

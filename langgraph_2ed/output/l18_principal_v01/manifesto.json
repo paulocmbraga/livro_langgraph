@@ -1,0 +1,10 @@
+{
+  "completo": true,
+  "execucoes": 216,
+  "segundos": 419.279,
+  "sha256": {
+    "controle_l16.json": "074c732a60d060bfdfd38bcd3c6a09955e1190d6bf100e147aee8d7c40f7477e",
+    "protocolo.json": "0db8229e5e31314262d4a58f65397971a017c954ebb5cbe18d5ff7a2219bb0a0",
+    "trajetorias.jsonl": "fbe12fa6c9ef7eeef3fe625e4e11345f1911e4dc3eaf4c6d0a2e5aa5fc3cbe6f"
+  }
+}

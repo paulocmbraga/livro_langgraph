@@ -1,5 +1,7 @@
 # Engenharia de Agentes com LangGraph
 
+**Escolha sua edição:** [2ª edição · laboratórios dos 32 capítulos](langgraph_2ed/README.md) · [1ª edição · instalação e exemplos](#preparar-o-ambiente).
+
 **Fundamentos, laboratórios e arquiteturas para produção** — Paulo Cesar Braga
 
 Código complementar da primeira edição. Reúne os exemplos em Python dos 24 capítulos,

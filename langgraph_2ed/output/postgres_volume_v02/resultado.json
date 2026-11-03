@@ -1,0 +1,132 @@
+{
+  "imagem": "postgres@sha256:57c72fd2a128e416c7fcc499958864df5301e940bca0a56f58fddf30ffc07777",
+  "postgres": "16.14",
+  "fechada": [
+    {
+      "id": 0,
+      "aceita": true,
+      "ms": 625.0
+    },
+    {
+      "id": 1,
+      "aceita": true,
+      "ms": 593.0
+    },
+    {
+      "id": 2,
+      "aceita": true,
+      "ms": 610.0
+    },
+    {
+      "id": 3,
+      "aceita": true,
+      "ms": 640.0
+    },
+    {
+      "id": 4,
+      "aceita": true,
+      "ms": 797.0
+    },
+    {
+      "id": 5,
+      "aceita": true,
+      "ms": 797.0
+    },
+    {
+      "id": 6,
+      "aceita": true,
+      "ms": 656.0
+    },
+    {
+      "id": 7,
+      "aceita": true,
+      "ms": 625.0
+    },
+    {
+      "id": 8,
+      "aceita": true,
+      "ms": 625.0
+    },
+    {
+      "id": 9,
+      "aceita": true,
+      "ms": 641.0
+    },
+    {
+      "id": 10,
+      "aceita": true,
+      "ms": 656.0
+    },
+    {
+      "id": 11,
+      "aceita": true,
+      "ms": 640.0
+    }
+  ],
+  "aberta": [
+    {
+      "id": 0,
+      "aceita": true,
+      "ms": 625.0
+    },
+    {
+      "id": 1,
+      "aceita": true,
+      "ms": 704.0
+    },
+    {
+      "id": 2,
+      "aceita": false,
+      "ms": 0.0
+    },
+    {
+      "id": 3,
+      "aceita": false,
+      "ms": 0.0
+    },
+    {
+      "id": 4,
+      "aceita": false,
+      "ms": 0.0
+    },
+    {
+      "id": 5,
+      "aceita": false,
+      "ms": 0.0
+    },
+    {
+      "id": 6,
+      "aceita": false,
+      "ms": 0.0
+    },
+    {
+      "id": 7,
+      "aceita": false,
+      "ms": 0.0
+    },
+    {
+      "id": 8,
+      "aceita": false,
+      "ms": 0.0
+    },
+    {
+      "id": 9,
+      "aceita": false,
+      "ms": 0.0
+    },
+    {
+      "id": 10,
+      "aceita": false,
+      "ms": 0.0
+    },
+    {
+      "id": 11,
+      "aceita": false,
+      "ms": 0.0
+    }
+  ],
+  "dump_bytes": 12004,
+  "origem": "pausada",
+  "copia": "aprovada",
+  "efeitos_externos": 0
+}

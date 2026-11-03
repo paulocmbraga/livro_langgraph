@@ -1,0 +1,146 @@
+{
+  "AU-71": {
+    "ticket": "AU-71",
+    "org": "Sul",
+    "manual": "MAN-591",
+    "estado": "ST-441"
+  },
+  "AU-46": {
+    "ticket": "AU-46",
+    "org": "Norte",
+    "manual": "MAN-664",
+    "estado": "ST-494"
+  },
+  "AU-39": {
+    "ticket": "AU-39",
+    "org": "Sul",
+    "manual": "MAN-737",
+    "estado": "ST-547"
+  },
+  "AU-58": {
+    "ticket": "AU-58",
+    "org": "Norte",
+    "manual": "MAN-810",
+    "estado": "ST-600"
+  },
+  "AU-92": {
+    "ticket": "AU-92",
+    "org": "Sul",
+    "manual": "MAN-883",
+    "estado": "ST-653"
+  },
+  "AU-24": {
+    "ticket": "AU-24",
+    "org": "Norte",
+    "manual": "MAN-956",
+    "estado": "ST-706"
+  },
+  "AU-66": {
+    "ticket": "AU-66",
+    "org": "Sul",
+    "manual": "MAN-32",
+    "estado": "ST-759"
+  },
+  "AU-43": {
+    "ticket": "AU-43",
+    "org": "Norte",
+    "manual": "MAN-105",
+    "estado": "ST-812"
+  },
+  "AU-19": {
+    "ticket": "AU-19",
+    "org": "Sul",
+    "manual": "MAN-178",
+    "estado": "ST-865"
+  },
+  "AU-85": {
+    "ticket": "AU-85",
+    "org": "Norte",
+    "manual": "MAN-251",
+    "estado": "ST-918"
+  },
+  "AU-37": {
+    "ticket": "AU-37",
+    "org": "Sul",
+    "manual": "MAN-324",
+    "estado": "ST-971"
+  },
+  "AU-98": {
+    "ticket": "AU-98",
+    "org": "Norte",
+    "manual": "MAN-397",
+    "estado": "ST-31"
+  },
+  "AU-23": {
+    "ticket": "AU-23",
+    "org": "Sul",
+    "manual": "MAN-470",
+    "estado": "ST-84"
+  },
+  "AU-67": {
+    "ticket": "AU-67",
+    "org": "Norte",
+    "manual": "MAN-543",
+    "estado": "ST-137"
+  },
+  "AU-41": {
+    "ticket": "AU-41",
+    "org": "Sul",
+    "manual": "MAN-616",
+    "estado": "ST-190"
+  },
+  "AU-56": {
+    "ticket": "AU-56",
+    "org": "Norte",
+    "manual": "MAN-689",
+    "estado": "ST-243"
+  },
+  "AU-32": {
+    "ticket": "AU-32",
+    "org": "Sul",
+    "manual": "MAN-762",
+    "estado": "ST-296"
+  },
+  "AU-79": {
+    "ticket": "AU-79",
+    "org": "Norte",
+    "manual": "MAN-835",
+    "estado": "ST-349"
+  },
+  "AU-47": {
+    "ticket": "AU-47",
+    "org": "Norte",
+    "manual": "MAN-908",
+    "estado": "ST-402"
+  },
+  "AU-84": {
+    "ticket": "AU-84",
+    "org": "Sul",
+    "manual": "MAN-981",
+    "estado": "ST-455"
+  },
+  "AU-21": {
+    "ticket": "AU-21",
+    "org": "Sul",
+    "manual": "MAN-57",
+    "estado": "ST-508"
+  },
+  "AU-63": {
+    "ticket": "AU-63",
+    "org": "Sul",
+    "manual": "MAN-130",
+    "estado": "ST-561"
+  },
+  "AU-76": {
+    "ticket": "AU-76",
+    "org": "Sul",
+    "manual": "MAN-203",
+    "estado": "ST-614"
+  },
+  "AU-49": {
+    "ticket": "AU-49",
+    "org": "Sul",
+    "manual": "MAN-276",
+    "estado": "ST-667"
+  }
+}

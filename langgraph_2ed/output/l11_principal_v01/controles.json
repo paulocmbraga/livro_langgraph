@@ -1,0 +1,234 @@
+{
+  "normal": {
+    "voto": {
+      "autorizar": true,
+      "chave": "aurora-normal",
+      "digest": "2746a74e03609d7786abe397434e7bd0215970eefa64ecd4278a46979c80de53"
+    },
+    "primeiro": {
+      "checkpoint": "1f1d7436-4ec2-6aad-8003-18df3c09bbd9",
+      "proximos": [],
+      "estado": {
+        "pedido": {
+          "intencao": "normal",
+          "chamado": "VPN-42",
+          "minutos": 30
+        },
+        "chave": "aurora-normal",
+        "digest": "2746a74e03609d7786abe397434e7bd0215970eefa64ecd4278a46979c80de53",
+        "voto": {
+          "autorizar": true,
+          "chave": "aurora-normal",
+          "digest": "2746a74e03609d7786abe397434e7bd0215970eefa64ecd4278a46979c80de53"
+        },
+        "fase": "confirmada",
+        "recibo": "rc-36cce98fe1fbf9c15ead89dc",
+        "origem": "resposta"
+      },
+      "interrupcoes": []
+    },
+    "efeitos": [
+      {
+        "chave": "aurora-normal",
+        "intencao": "normal",
+        "digest": "2746a74e03609d7786abe397434e7bd0215970eefa64ecd4278a46979c80de53",
+        "minutos": 30,
+        "recibo": "rc-36cce98fe1fbf9c15ead89dc"
+      }
+    ]
+  },
+  "negada": {
+    "voto": {
+      "autorizar": false,
+      "chave": "aurora-negada",
+      "digest": "e7cd03a4e887b0f4544bad04250fcb7073bea2d760ea6f2fdc5111d21edd7e3d"
+    },
+    "primeiro": {
+      "checkpoint": "1f1d7436-5ff9-6799-8002-b95a02f5b08f",
+      "proximos": [],
+      "estado": {
+        "pedido": {
+          "intencao": "negada",
+          "chamado": "VPN-42",
+          "minutos": 30
+        },
+        "chave": "aurora-negada",
+        "digest": "e7cd03a4e887b0f4544bad04250fcb7073bea2d760ea6f2fdc5111d21edd7e3d",
+        "voto": {
+          "autorizar": false,
+          "chave": "aurora-negada",
+          "digest": "e7cd03a4e887b0f4544bad04250fcb7073bea2d760ea6f2fdc5111d21edd7e3d"
+        },
+        "fase": "recusada"
+      },
+      "interrupcoes": []
+    },
+    "efeitos": []
+  },
+  "voto_obsoleto": {
+    "voto": {
+      "autorizar": true,
+      "chave": "aurora-voto_obsoleto",
+      "digest": "outra-revisao"
+    },
+    "primeiro": {
+      "checkpoint": "1f1d7436-732d-6ee3-8002-c51962c7fa83",
+      "proximos": [],
+      "estado": {
+        "pedido": {
+          "intencao": "voto_obsoleto",
+          "chamado": "VPN-42",
+          "minutos": 30
+        },
+        "chave": "aurora-voto_obsoleto",
+        "digest": "acfabc782b6d6a72ff55e606c73866d24720555b31eb96df12708187320a6ac5",
+        "voto": {
+          "autorizar": true,
+          "chave": "aurora-voto_obsoleto",
+          "digest": "outra-revisao"
+        },
+        "fase": "recusada"
+      },
+      "interrupcoes": []
+    },
+    "efeitos": []
+  },
+  "timeout": {
+    "voto": {
+      "autorizar": true,
+      "chave": "aurora-timeout",
+      "digest": "53e456409f7b5c4a25cd53865e7bc26934d7378d79ce74f74975ccfa2cfaa95d"
+    },
+    "primeiro": {
+      "checkpoint": "1f1d7436-8a35-6f07-8003-35cf99b2676a",
+      "proximos": [
+        "triagem"
+      ],
+      "estado": {
+        "pedido": {
+          "intencao": "timeout",
+          "chamado": "VPN-42",
+          "minutos": 30
+        },
+        "chave": "aurora-timeout",
+        "digest": "53e456409f7b5c4a25cd53865e7bc26934d7378d79ce74f74975ccfa2cfaa95d",
+        "voto": {
+          "autorizar": true,
+          "chave": "aurora-timeout",
+          "digest": "53e456409f7b5c4a25cd53865e7bc26934d7378d79ce74f74975ccfa2cfaa95d"
+        },
+        "fase": "desconhecida"
+      },
+      "interrupcoes": [
+        {
+          "fase": "desconhecida",
+          "chave": "aurora-timeout",
+          "acao": "reconciliar ou manter pendente"
+        }
+      ]
+    },
+    "efeitos": [
+      {
+        "chave": "aurora-timeout",
+        "intencao": "timeout",
+        "digest": "53e456409f7b5c4a25cd53865e7bc26934d7378d79ce74f74975ccfa2cfaa95d",
+        "minutos": 30,
+        "recibo": "rc-4bf08f3dc79b38396f0dc15c"
+      }
+    ],
+    "consulta_503": {
+      "checkpoint": "1f1d7436-9c21-6ccc-8005-6964069ca016",
+      "proximos": [
+        "triagem"
+      ],
+      "estado": {
+        "pedido": {
+          "intencao": "timeout",
+          "chamado": "VPN-42",
+          "minutos": 30
+        },
+        "chave": "aurora-timeout",
+        "digest": "53e456409f7b5c4a25cd53865e7bc26934d7378d79ce74f74975ccfa2cfaa95d",
+        "voto": {
+          "autorizar": true,
+          "chave": "aurora-timeout",
+          "digest": "53e456409f7b5c4a25cd53865e7bc26934d7378d79ce74f74975ccfa2cfaa95d"
+        },
+        "fase": "desconhecida"
+      },
+      "interrupcoes": [
+        {
+          "fase": "desconhecida",
+          "chave": "aurora-timeout",
+          "acao": "reconciliar ou manter pendente"
+        }
+      ]
+    },
+    "restabelecida": {
+      "checkpoint": "1f1d7436-ae6e-642d-8007-7b51d81e5dd6",
+      "proximos": [],
+      "estado": {
+        "pedido": {
+          "intencao": "timeout",
+          "chamado": "VPN-42",
+          "minutos": 30
+        },
+        "chave": "aurora-timeout",
+        "digest": "53e456409f7b5c4a25cd53865e7bc26934d7378d79ce74f74975ccfa2cfaa95d",
+        "voto": {
+          "autorizar": true,
+          "chave": "aurora-timeout",
+          "digest": "53e456409f7b5c4a25cd53865e7bc26934d7378d79ce74f74975ccfa2cfaa95d"
+        },
+        "fase": "confirmada",
+        "recibo": "rc-4bf08f3dc79b38396f0dc15c",
+        "origem": "consulta"
+      },
+      "interrupcoes": []
+    }
+  },
+  "concorrencia": {
+    "respostas": [
+      [
+        200,
+        {
+          "chave": "aurora-corrida",
+          "digest": "b10a5fb02f54c747226d96786f2becdbb2dbe38600fa9ca6e49bf66b1a994f86",
+          "recibo": "rc-b0a42c3e64de133fc7bd453f"
+        }
+      ],
+      [
+        201,
+        {
+          "chave": "aurora-corrida",
+          "digest": "b10a5fb02f54c747226d96786f2becdbb2dbe38600fa9ca6e49bf66b1a994f86",
+          "recibo": "rc-b0a42c3e64de133fc7bd453f"
+        }
+      ]
+    ],
+    "efeitos": [
+      {
+        "chave": "aurora-corrida",
+        "intencao": "corrida",
+        "digest": "b10a5fb02f54c747226d96786f2becdbb2dbe38600fa9ca6e49bf66b1a994f86",
+        "minutos": 30,
+        "recibo": "rc-b0a42c3e64de133fc7bd453f"
+      }
+    ]
+  },
+  "colisao": {
+    "status": 409,
+    "resposta": {
+      "erro": "chave reutilizada com outro conteúdo"
+    },
+    "efeitos": [
+      {
+        "chave": "aurora-corrida",
+        "intencao": "corrida",
+        "digest": "b10a5fb02f54c747226d96786f2becdbb2dbe38600fa9ca6e49bf66b1a994f86",
+        "minutos": 30,
+        "recibo": "rc-b0a42c3e64de133fc7bd453f"
+      }
+    ]
+  }
+}
